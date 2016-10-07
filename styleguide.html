@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>Style Guide</title>
+
+    <link href="css/main.css" rel="stylesheet"> 
+    <link href="css/grids.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <h1>Cocoon Co. Style Guide</h1>
+
+     <nav>
+        <a href="userflows.html" class="button-nav">User Flows</a>
+        <a href="styleguide.html" class="button-nav">Style Guide</a>
+        <a href="citations.html" class="button-nav">Citations</a>
+     </nav>
+      
+      <p>
+
+        Jump to:
+        <ul>
+          <li><a href="#interactive_elements">Interactive Elements</a></li>
+          <li><a href="#text_elements">Text Elements</a></li>
+          <li><a href="#combined_elements">Combined Elements</a></li>
+        </ul>
+
+      </p>
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+
+      <section>
+
+        <h2>Navigation Button</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.nav-main-item, box-item</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;nav class="nav-main box"&gt;<br>
+        &lt;a href="#" class="nav-main-item box-item"&gt;Shop&lt;/a&gt;<br>
+        &lt;/nav&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <nav class="nav-main box">
+            <a href="#shop" class="nav-main-item box-item">Shop</a>
+        </nav>
+
+      </section>
+
+      <section>
+        <h2>In-text link</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.textlink</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a href="#" class="textlink"&gt;Parachute Hammock&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <a class="textlink" href="#">Parachute Hammock</a>
+
+      </section>
+
+      <section>
+        <h2>Submit/Reset Buttons</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.button</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a class="button" href="#"&gt;Submit&lt;/a&gt;<br>
+        &lt;a class="button" href="#"&gt;Reset&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <a class="button" href="#">Submit</a>
+        <a class="button" href="#">Reset</a>
+
+      </section>
+
+      <section>
+        <h2>Text Input Field</h2>
+
+        <h3>CSS selector:</h3>
+        <p>input</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;input type="text" id="form-text" placeholder="Ham Mock"&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <label for="form-text">Name: </label>
+           <input type="text" id="form-text" placeholder="Ham Mock">
+
+      </section>
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+
+      <section>
+        <h2>Headings</h2>
+
+        <h3>Sample code:</h3>
+        <code>&lt;h1&gt;Header 1&lt;/h1&gt;<br>
+        &lt;h2&gt;Header 2&lt;/h2&gt;<br>
+        &lt;h3&gt;Header 3&lt;/h3&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <h1>Header 1</h1>
+        <h4>Header 2</h4>
+        <h5>Header 3</h5>
+
+      </section>
+
+      <section>
+        <h2>Paragraphs</h2>
+
+        <h3>Sample code:</h3>
+        <code>&lt;p&gt;Cocoon Co. is a hammock e-commerce and inspiration site for outdoor adventurers and enthusiast loungers. Innovative materials and dozens of styles encourage explorers to combine the thrill of adventure with an appetite to relax.&lt;/p&gt;</code>
+          
+        <h3>Rendered element:</h3>
+        <p>Cocoon Co. is a hammock e-commerce and inspiration site for outdoor adventurers and enthusiast loungers. Innovative materials and dozens of styles encourage explorers to combine the thrill of adventure with an appetite to relax.</p>
+
+      </section>
+
+      <section>
+        <h2>Bulleted Lists</h2>
+
+        <h3>Sample code:</h3>
+
+        <code>&lt;ul&gt;<br>
+          &lt;li&gt;Mayan Hammocks&lt;/li&gt;<br>
+          &lt;li&gt;Rope Hammocks&lt;/li&gt;<br>
+          &lt;li&gt;Camping Hammocks&lt;/li&gt;<br>
+          &lt;li&gt;Nicaraguan Hammocks&lt;/li&gt;<br>
+          &lt;/ul&gt;
+        </code>
+
+        <h3>Rendered element:</h3>
+        <ul>
+          <li>Mayan Hammocks</li>
+          <li>Rope Hammocks</li>
+          <li>Camping Hammocks</li>
+          <li>Nicaraguan Hammocks</li>
+        </ul>
+
+      </section>
+
+      <section>
+        <h2>Numbered Lists</h2>
+
+        <h3>Sample code:</h3>
+
+        <code>&lt;ol&gt;<br>
+          &lt;li&gt;Mayan Hammocks&lt;/li&gt;<br>
+          &lt;li&gt;Rope Hammocks&lt;/li&gt; <br>
+          &lt;li&gt;Camping Hammocks&lt;/li&gt; <br>
+          &lt;li&gt;Nicaraguan Hammocks&lt;/li&gt;<br>&lt;/ol&gt;
+        </code>
+
+        <h3>Rendered element:</h3>
+        <ol>
+          <li>Mayan Hammocks</li>
+          <li>Rope Hammocks</li>
+          <li>Camping Hammocks</li>
+          <li>Nicaraguan Hammocks</li>
+        </ol>
+
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+
+      <section>
+        <h2>Main Navigation</h2>
+
+        <nav class="nav-main box">
+            <a href="#shop" class="nav-main-item box-item">Shop</a>
+            <a href="#customize" class="nav-main-item box-item">Customize</a>
+            <a href="#explore" class="nav-main-item box-item">Explore</a>
+            <a href="#about" class="nav-main-item box-item">About</a>
+        </nav>
+
+      </section>
+
+      <section>
+        <h2>Product Listing</h2>
+
+        <figure>
+          <img alt="Colourfully-striped Brazilian hammock" src="img/hammock1.jpg">
+          <figcaption>Striped Brazilian Hammock</figcaption>
+          <h3 class="figure">$59</h3>
+        </figure>
+
+      </section>
+
+      <section>
+        <h2>Grids</h2>
+
+        <div>
+          <h3>4K Grid</h3>
+          <img src="img/4kgrid.jpg" alt="4k wireframes with grid">
+        </div>
+
+        <div>
+          <h3>Mobile Grid</h3>
+          <img src="img/mobilegrid.jpg" alt="Mobile wireframes with grid">
+        </div>
+
+        <div>
+          <h3>Smartwatch Grid</h3>
+          <img src="img/smartwatchgrid.jpg" alt="Smartwatch wireframes with grid">
+        </div>
+
+      </section>
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+
+  </body>
+</html>

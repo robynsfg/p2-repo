@@ -1,0 +1,24 @@
+/* grids.css */
+/* something about a border-box model */
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+.box {
+	
+/*
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;*/
+
+
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+ 
+}
+
+.box-item {
+	/* flex: flex-grow flex-shrink flex-basis */;
+	flex: 1 1 auto;
+}
