@@ -6,10 +6,10 @@
 
 .box {
 	
-/*
+
 	display: -webkit-flex;
 	display: -ms-flex;
-	display: flex;*/
+	display: flex;
 
 
 	-webkit-flex-wrap: wrap;
@@ -21,4 +21,48 @@
 .box-item {
 	/* flex: flex-grow flex-shrink flex-basis */;
 	flex: 1 1 auto;
+}
+
+
+
+
+[class^='grid-col-'] {
+	float: left;
+	padding: 0; 
+	
+}
+
+.grid-row::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.grid-col-1of2, .grid-col-1of4, .grid-col-1of3, .grid-col-2of3 {
+	width: 100%;
+}
+
+@media (min-width: 30em) {
+    
+    .grid-col-1of3 {
+        width: 50%;
+    }
+}
+
+
+
+@media (min-width: 90em) {
+
+    .grid-col-2of3 {
+        width: 66.666%;
+    }
+
+    .grid-col-1of3 {
+        width: 33.333%;
+    }
+
+    .grid-col-1of4 {
+        width: 25%;
+    }
+    
 }

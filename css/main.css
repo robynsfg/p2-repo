@@ -42,8 +42,8 @@ section h3 {
 
 section h4 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 2em;
-  color: #333;
+  font-size: 1em;
+  color: #FB5A5A;
   margin-bottom: 0;
 }
 
@@ -56,7 +56,9 @@ section h5 {
 }
 
 section p {
-  margin-top: 0;
+    margin: 1em;
+    font-size: .8em;
+    line-height: 1.8em;
 }
 
 section code {
@@ -65,18 +67,48 @@ section code {
 }
 
 figure {
-  display: inline-block;
+    display: inline;
+    float: left;
+    margin: 0;
+    width: 100%;
 }
 
+.product-listing-background{
+    z-index: -999;
+    margin-top: 2vw;
+    padding-bottom: 2em;
+    margin-right: 1em;
+    background-image: linear-gradient(to right,transparent 0.1%, #FB5A5A 0.1%, #FB5A5A 50%, transparent 50%, transparent);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .5s ease-out;
+    
+}
+
+@media (max-width: 90em) {
+    
+    .product-listing-background{
+            margin-top: 5vw;
+            margin-right: 3em;
+
+
+    }
+
+}
+
+.product-listing:hover .product-listing-background{
+    background-position: 0 0;
+    
+}
+    
 figcaption, h3.figure {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1em;
-  text-align: center;
-  margin-top: 0.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    padding: 2vw 0 0 0; 
 }
 
 h3.figure {
-  color: #FB5A5A;
+    display: inline;
 }
 
 ul.citations {
@@ -127,6 +159,25 @@ cite {
   transition: background-color 0.5s ease-out;
 }
 
+.product-listing{
+    position: relative;
+}
+
+
+
+.product-listing img{
+    margin: 1em;
+    width: 50%;
+}
+
+.product-listing-caption{
+    position: absolute;
+    width: 42%;
+    right: 2em;
+    top: 1vw;
+
+}
+
 .button-nav:active, .button-nav:hover, .button-nav:focus, 
 .nav-main-item:active, .nav-main-item:hover, .nav-main-item:focus {
   -webkit-transition: color 0.4s;
@@ -170,8 +221,8 @@ input {
 */
 
 img {
-  height: auto;
-  width: auto;
-  max-width: 100%;
-
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    float: left;
 }
