@@ -274,14 +274,12 @@
 	-webkit-flex: 1 1 auto;
 	-ms-flex: 1 1 auto;
 	flex: 1 1 auto;
-	border: 1px blue solid;
 }
 
 .box-item-cart{
 	-webkit-flex: .5 1 auto;
 	-ms-flex: .5 1 auto;
 	flex: .5 1 auto;
-		border: 1px red solid;
 
 }
 
@@ -293,7 +291,6 @@
 	-webkit-flex: 3 1 auto;
 	-ms-flex: 3 1 auto;
 	flex: 3 1 auto;
-		border: 1px red solid;
 
 }
 
@@ -313,7 +310,32 @@
 /*
 	We can use media queries to apply different styles at specific sizes. In this case, we are specifying when the browser window's width is less than 30em, we should apply the styling within the brackets.
 */
-@media (max-width: 30em) {
+@media (max-width: 35em) {
+	
+	.box-item-logo {
+	-webkit-flex: 3 1 auto;
+	-ms-flex: 3 1 auto;
+	flex: 3 1 auto;
+	}
+
+	.box-item-hamburger {
+	-webkit-flex: .5 1 auto;
+	-ms-flex: .5 1 auto;
+	flex: .5 1 auto;
+	}
+
+	.box-item-cart {
+	-webkit-flex: 1 1 35em;
+	-ms-flex: 1 1 35em;
+	flex: 1 1 35em;
+	}
+
+	.box-item-nav {
+	-webkit-flex: 5 1 35em;
+	-ms-flex: 5 1 35em;
+	flex:  1 35em;
+	}
+
 	
 
 }

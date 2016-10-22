@@ -7,6 +7,11 @@ body {
   background-color: #f7f7f7;
 }
 
+a{
+  text-decoration: none;
+  color: black;
+}
+
 section:not([id]) {
   padding: 0.5em 0;
   border-top: 1px dotted #333;
@@ -31,6 +36,18 @@ section:not([id]) {
   top: 8vw;
 }
 
+@media (max-width: 45em) {
+
+  .hero-padding{
+    width: 100%;
+    text-align: center;
+    padding: 0 3vw 0 3vw;
+    left: 0;
+    top: 5vw;
+  } 
+
+}
+
 #explore-main{
 
 }
@@ -42,10 +59,12 @@ section:not([id]) {
 
 h1 {
   font-family: 'Karla', sans-serif;
+  font-weight: 700;
 }
 
 section h1 {
   font-family: 'Karla', sans-serif;
+  font-weight: 700; 
   font-size: 2.5em;
   color: #333;
   text-transform: uppercase;
@@ -53,6 +72,7 @@ section h1 {
 
 section h2 {
   font-family: 'Karla', serif;
+  font-weight: 700;
   font-size: 3.4em;
   color: white;
   margin: 0;
@@ -68,16 +88,28 @@ section h3 {
   margin: 01em 0 0.5em 0;
 }
 
+@media (max-width: 35em) {
+
+  section h2{
+    font-size: 2rem;
+  } 
+
+  section h3{
+    font-size: .9rem;
+  } 
+
+}
+
 
 section h4 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 2em;
   color: #333;
   margin-bottom: 0;
 }
 
 section h5 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.25em;
   color: #333;
   text-transform: uppercase;
@@ -98,7 +130,7 @@ figure {
 }
 
 figcaption, h3.figure {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1em;
   text-align: center;
   margin-top: 0.5em;
@@ -129,6 +161,9 @@ cite {
   font-style: normal;
 }
 
+#myTopnav{
+  display: block;
+}
 
 /* 
   INTERACTIVE ELEMENTS -------------------
@@ -137,18 +172,51 @@ cite {
 .button-nav {
   display: inline-block;
   color: #333;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
   font-size: 1rem;
-  padding: 1rem 1.5rem;
-  padding-left: 0;
+  letter-spacing: .15rem;
+  padding: 1rem .75rem 1rem .75rem;
   text-decoration: none;
+  text-transform: uppercase;
   transition: background-color 0.5s ease-out;
 }
+
+.box-item-hamburger{
+  display: none;
+}
+
+  .box-item-logo{
+    margin: 0 0 0 2rem;
+  }
+
+@media (max-width: 35em) {
+
+  .box-item-hamburger{
+    display:inline; 
+  }
+
+  #myTopnav{
+    display: none;
+    width: 100%;
+  }
+
+  .button-nav {
+    text-align: center;
+    padding: 0.5rem 0 1rem 0;
+    display: block;
+  }
+
+
+
+}
+
 
 .nav-main-item {
   display: inline-block;
   color: #333;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
   font-size: 1rem;
   text-transform: uppercase;
   padding: 2rem 4rem;
@@ -172,10 +240,12 @@ cite {
   margin-top: 1em;
   padding: 1em 2em;
   color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.8em;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
   text-transform: uppercase;
   text-decoration: none;
+  letter-spacing: .15rem;
 }
 
 .button:hover {
