@@ -2,43 +2,65 @@
   STYLE GUIDE STYLING 
 */
 body { 
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 0.9rem;
-  padding: 2rem;
 }
 
 section:not([id]) {
-  margin: 1em 0;
   padding: 0.5em 0;
   border-top: 1px dotted #333;
 }
+
+
+#hero-hammock{
+  width: 100%;
+}
+
+#hero-hammock img{
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+
+.hero-padding{
+  width: 30%;
+  margin: 0 0 0 8vw;
+  padding-top: 8vw;
+}
+
 
 /* 
   TEXT ELEMENTS -------------------
 */
 
 h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Karla', sans-serif;
 }
 
 section h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Karla', sans-serif;
   font-size: 2.5em;
   color: #333;
   text-transform: uppercase;
 }
 
 section h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.75em;
-  color: #FB5A5A;
-  margin-bottom: 0;
+  font-family: 'Karla', serif;
+  font-size: 3.4em;
+  color: white;
+  margin: 0;
+  padding: 0;
 }
 
 section h3 {
-  font-family: 'Montserrat', sans-serif;
-  margin-bottom: 0.5em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  letter-spacing: .05em;
+  line-height: 1.6rem;
+  color: white;
+  margin: 01em 0 0.5em 0;
 }
+
 
 section h4 {
   font-family: 'Montserrat', sans-serif;
