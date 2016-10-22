@@ -4,6 +4,7 @@
 body { 
   font-family: 'Roboto', sans-serif;
   font-size: 0.9rem;
+  background-color: #f7f7f7;
 }
 
 section:not([id]) {
@@ -28,6 +29,10 @@ section:not([id]) {
   position: absolute;
   left: 8vw;
   top: 8vw;
+}
+
+#explore-main{
+
 }
 
 
