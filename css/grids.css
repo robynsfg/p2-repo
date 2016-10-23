@@ -16,8 +16,8 @@
 */
 [class^='grid-col-'] {
 	float: left;
-	padding: 0; 
-	text-align: center; /* center the content in this block by default */
+	padding: 0;
+	text-align: left; /* center the content in this block by default */
 	width: 100%;  /* defining the default to be mobile first */
 }
 
@@ -36,6 +36,7 @@
 	Setting up break points for Small Size (multi-column for mobile) used in the cart and checkout
 */
 
+/*
 @media (min-width: 0em) {
 .grid-col-cart-1of12 {
 	width: 8.333%;
@@ -78,11 +79,11 @@
 	Setting up break points for Mid Size (Tablet)
 >>>>>>> updatingFormFields
 */
-
+/*
 @media (min-width: 40em) {
 
 /* Define columns */
-
+/*
 
 .grid-col-m-1of12 {
 	width: 8.333%;	
@@ -133,7 +134,7 @@
 }
 
 }
-
+*/
 
 
 /*
