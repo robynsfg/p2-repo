@@ -1,1 +1,74 @@
-<p>fuck this fucking bullshit INDEED</P>
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>Style Guide</title>
+
+    <link href="css/main.css" rel="stylesheet"> 
+    <link href="css/normalize.css" rel="stylesheet"> 
+    <link href="css/grids.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,700|Roboto:100,300" rel="stylesheet">
+
+
+
+
+  </head>
+
+  <body>
+
+  
+    <nav class="box">
+
+      <div class="box-item-logo">
+        <h3>logo goes here</h3>
+      </div>
+
+      <div class="box-item-hamburger">
+      <a href="javascript:void(0);" onclick="responsiveMenu()"><h3>☰</h3></a>
+      </div>
+      <div id="myTopnav" class="topnav">
+        <a class="box-item-nav button-nav" href="shop.html">Hammocks</a>
+        <a class="box-item-nav button-nav" href="explore.html">Explore</h3></a>
+        <a class="box-item-nav button-nav" href="about.html">About</a>
+        <a class="box-item-cart button-nav" href="cart.html">Cart</a>
+      </div>
+
+    </nav>
+
+
+
+  	<section id="hero-hammock">
+  		<img src="img/hero.jpg" alt="hammock near a desert mountain">
+  		<div class="hero-padding">
+  			<h2>Dope Hammocks</h2>
+  			<h3>Take it on a trip. Bring your dog. Go on a hike, but bring a hammock.</h3>
+        <a class="button" href="#">Shop Now</a>
+  		</div>
+
+  	</section>
+
+    <section id="explore-main">
+      <h2>Explore</h2>
+
+    </section>
+
+
+
+  <script>
+  function responsiveMenu() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+          x.className += " responsive";
+          document.getElementById("myTopnav").style.display = "block";
+      } else {
+          x.className = "topnav";
+          document.getElementById("myTopnav").style.display = "none";
+      }
+  }
+  </script>
+
+
+  </body>
+</html>

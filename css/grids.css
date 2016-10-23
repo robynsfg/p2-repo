@@ -1,68 +1,351 @@
-/* grids.css */
-/* something about a border-box model */
-*, *::after, *::before {
+
+/*
+	With this selector, we are specifying that all objects use
+	the border-box model (not the content-box model)
+*/
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
-.box {
-	
-
-	display: -webkit-flex;
-	display: -ms-flex;
-	display: flex;
-
-
-	-webkit-flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
- 
-}
-
-.box-item {
-	/* flex: flex-grow flex-shrink flex-basis */;
-	flex: 1 1 auto;
-}
-
-
-
-
+/*
+	Here we are using a 'fancy' css selector that is 
+	specifying if the class of an item starts with
+	'grid-col-', then we should apply the styling listed
+*/
 [class^='grid-col-'] {
 	float: left;
 	padding: 0; 
-	
+	text-align: center; /* center the content in this block by default */
+	width: 100%;  /* defining the default to be mobile first */
 }
 
-.grid-row::after {
+/*
+	Here we are clearing floated items to ensure that
+	our 'grid'  structure can have different rows
+*/
+.grid-row:after {
 	content: "";
 	display: block;
 	clear: both;
 }
 
-.grid-col-1of2, .grid-col-1of4, .grid-col-1of3, .grid-col-2of3 {
+
+/*
+	Setting up break points for Small Size (multi-column for mobile) used in the cart and checkout
+*/
+
+@media (min-width: 0em) {
+.grid-col-cart-1of12 {
+	width: 8.333%;
+}
+.grid-col-cart-2of12 {
+	width: 16.667%;	
+}
+.grid-col-cart-3of12 {
+	width: 25%;	
+}
+.grid-col-cart-4of12 {
+	width: 33.333%;
+}
+.grid-col-cart-6of12 {
+	width: 50%;
+}
+.grid-col-cart-8of12 {
+  width: 66.667%;
+}
+.grid-col-cart-9of12 {
+  width: 75%;
+}
+.grid-col-cart-10of12 {
+  width: 83.333%;
+}
+.grid-col-cart-12of12 {
+  width: 100%;
+}
+}
+
+@media (max-width: 21em) {
+.grid-col-cartsmall-8of12 {
+  width: 66.667%;
+}
+}
+
+
+
+/*
+	Setting up break points for Mid Size (Tablet)
+>>>>>>> updatingFormFields
+*/
+
+@media (min-width: 40em) {
+
+/* Define columns */
+
+
+.grid-col-m-1of12 {
+	width: 8.333%;	
+}
+
+.grid-col-m-2of12 {
+	width: 16.667%;	
+}
+
+.grid-col-m-3of12 {
+	width: 25%;	
+}
+
+.grid-col-m-4of12 {
+	width: 33.333%;
+}
+
+.grid-col-m-5of12 {
+	width: 41.667%;	
+}
+
+.grid-col-m-6of12 {
+	width: 50%;
+}
+
+.grid-col-m-7of12 {
+	width: 58.333%;
+}
+
+.grid-col-m-8of12 {
+  width: 66.667%;
+}
+
+.grid-col-m-9of12 {
+	width: 75%;
+}
+
+.grid-col-m-10of12 {
+	width: 83.333%;
+}
+
+.grid-col-m-11of12 {
+	width: 91.667%;
+}
+
+.grid-col-m-12of12 {
 	width: 100%;
 }
 
-@media (min-width: 30em) {
-    
-    .grid-col-1of3 {
-        width: 50%;
-    }
 }
 
 
 
-@media (min-width: 90em) {
+/*
+	Setting up break points for WEB
+*/
 
-    .grid-col-2of3 {
-        width: 66.666%;
-    }
+@media (min-width: 68em) {
 
-    .grid-col-1of3 {
-        width: 33.333%;
-    }
-
-    .grid-col-1of4 {
-        width: 25%;
-    }
-    
+/* Define columns */
+.grid-col-1of12 {
+	width: 8.333%;	
 }
+
+.grid-col-2of12 {
+	width: 16.667%;	
+}
+
+.grid-col-3of12 {
+	width: 25%;	
+}
+
+.grid-col-4of12 {
+	width: 33.333%;
+}
+
+.grid-col-5of12 {
+	width: 41.667%;	
+}
+
+.grid-col-6of12 {
+	width: 50%;
+}
+
+.grid-col-7of12 {
+	width: 58.333%;
+}
+
+.grid-col-8of12 {
+  width: 66.667%;
+}
+
+.grid-col-9of12 {
+	width: 75%;
+}
+
+.grid-col-10of12 {
+	width: 83.333%;
+}
+
+.grid-col-11of12 {
+	width: 91.667%;
+}
+
+.grid-col-11-5of12 {
+	width: 95.8335%;
+}
+
+.grid-col-12of12 {
+	width: 100%;
+}
+
+}
+
+
+/*
+	Here we are clearing floated items to ensure that
+	our 'grid' structure can have different rows
+*/
+.grid-row:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
+
+/* 
+	For more on flexbox, I highly recommend "A Guide to Flexbox": http://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+	PLEASE NOTE:
+	A lot of the properties covered below work ONLY when you set display to flexbox. Make sure to understand when and where	you can apply these properties by looking them up as necessary.
+*/
+
+
+/*
+	With the asterisk (*), we are selecting everything. This allows us to apply the border-box model to all elements on the page. 
+
+	'::after' and '::before' are psuedo-elements. These are elements that CSS can add either after or before an element's content. You will see these in use if we use the older style of grids, to clear floats.
+*/
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+
+/*
+	Here we are going to establish some rules for our 'box'	which contains all the elements to be wrapped into the flexbox model.
+*/
+.box {
+
+	/* 
+		The statement below sets us into the flexbox display mode. Note support for flexbox still necessitates some vendor prefixes (see http://caniuse.com/#search=flex)
+	*/
+	display: -webkit-flex; /* For support in a series of Webkit browsers */
+	display: -ms-flex; /* For support in IE 10 */
+	display: flex; 
+
+	/* 
+		A flexbox will try to fit all elements in one line by default. The 'flex-wrap' property lets us wrap child elements that become too wide for their current row.
+	*/
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap; 
+
+	/* 
+		To get our flexbox to change how elements are spanned across the remaining space, we can use the 'justify-content' property. In this case, we are specifying that we want the extra space to be balanced around our elements.
+	*/
+	-webkit-justify-content: space-around;
+	-ms-justify-content: space-around;
+	justify-content: space-around;
+
+}
+
+
+.box-item-nav {
+	/*
+		For children of the parent 'flexbox', it is good practice to set a 'flex' property. This is a shorthand in which we in fact set three values, of 'flex-grow', 'flex-shrink' and 'flex-basis' accordingly. In our CSS, this will look like
+
+		flex: flex-grow flex-shrink flex-basis;
+
+		flex-grow - Defines the ability for an element to 'grow' into extra space as needed.
+		flex-shrink - Defines the ability for an element to 'shrink' as needed.
+		flex-basis - Defines the default size of an element before distributing space, can be based on existing height or width.
+
+		Both 'flex-grow' and 'flex-shrink' can be effectively thought as 'weights': For example elements with higher flex-grow weights - such as a value of 2 in a set of elements with weights of 1 - will try and take up more space when available. When the space is not available, the flexbox will compress those items as necessary.
+
+		In the example below, we are setting both the ability of elements to grow and shrink as equal (all 1), and we are telling the default size to pay attention to the element's set default sizing.
+	*/
+	-webkit-flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+}
+
+.box-item-cart{
+	-webkit-flex: .5 1 auto;
+	-ms-flex: .5 1 auto;
+	flex: .5 1 auto;
+
+}
+
+
+.box-item-logo {
+	/*
+		Given we are working with an image, in this case we have set a flex-basis value that is a pixel value to reflect the 'minimum' width of the image before the flexbox reflows and stacks the elements inside. Additionally, the use of a flex-grow value of 3 ensures that our image is 'heavier' (will take up more space) when available.
+	*/
+	-webkit-flex: 3 1 auto;
+	-ms-flex: 3 1 auto;
+	flex: 3 1 auto;
+
+}
+
+
+.box-item-text {
+	/* 
+		For the text, we want it to behave a bit differently, in this case setting an em value for its flex-basis. Using a 1 for the flex-grow value means it weighs less in comparison to our image, and will take less space when possible.
+	*/
+	-webkit-flex: 1 1 18em;
+	-ms-flex: 1 1 18em;
+	flex: 1 1 18em;
+
+	padding: 0 1rem;
+}
+
+
+/*
+	We can use media queries to apply different styles at specific sizes. In this case, we are specifying when the browser window's width is less than 30em, we should apply the styling within the brackets.
+*/
+@media (max-width: 35em) {
+	
+	.box-item-logo {
+	-webkit-flex: 3 1 auto;
+	-ms-flex: 3 1 auto;
+	flex: 3 1 auto;
+	}
+
+	.box-item-hamburger {
+	-webkit-flex: .5 1 auto;
+	-ms-flex: .5 1 auto;
+	flex: .5 1 auto;
+	}
+
+	.box-item-cart {
+	-webkit-flex: 1 1 35em;
+	-ms-flex: 1 1 35em;
+	flex: 1 1 35em;
+	}
+
+	.box-item-nav {
+	-webkit-flex: 5 1 35em;
+	-ms-flex: 5 1 35em;
+	flex:  1 35em;
+	}
+
+	
+
+}
+
+
+
+
+
+
+
+
+
+
