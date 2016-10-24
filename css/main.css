@@ -57,9 +57,21 @@ section:not([id]) {
   width: 80%;
 }
 
+.photo-grid-container{
+  margin: auto;
+  padding-top: 2rem;
+  width: 70%;
+  clear:both;
+}
+
+.photo-grid-container img{
+  padding: 1rem;
+}
 
 
-.product-description{
+
+.product-description, .product-extra-info, .product-cart-button,
+.review-section {
   clear:left;
   text-align: left;
   margin: auto;
@@ -67,13 +79,18 @@ section:not([id]) {
   line-height: 1.7em;
 }
 
-.product-extra-info{
-  clear:left;
-  text-align: left;
-  margin: auto;
-  padding-bottom: 2em;
-  width: 70%;
-  line-height: 1.7em;
+.product-extra-info img {
+  margin-top: 1em;
+  width: 40%;
+}
+
+.product-cart-button {
+  margin-top: 2em;
+}
+
+.review-section {
+  margin-top: 5em;
+  margin-bottom: 5em;
 }
 
 .BLAH {
@@ -87,25 +104,59 @@ section:not([id]) {
   background:#EEE;
   display: block;
   width:100%;
-  height:15em;
+  height:20em;
   margin-top: 5em;
   clear: both;
 
 }
 
-.image-product-detail {
-  height: auto;
+.footer-container {
+  margin:auto;
+  padding-top: 3em;
+  width: 60%;
+
 }
 
-.redcolor {
+.contact-container {
+  clear:left;
+  text-align: left;
+  margin: auto;
+  width: 70%;
+  line-height: 1.7em;
+}
+
+.image-product-detail {
+
+}
+
+.redcolor, .bluecolor {
   display: inline-block;
-  margin-top: 0.3em;
+  margin: 0.3em 0.3em 0 0;
   width: 20px;
   height: 20px;
   border-radius: 12.5px;
-  background-color: #83a0a4;
   text-align: left;
 }
+
+.redcolor{
+  background-color: red;
+}
+
+.bluecolor {
+  background-color: #4A90E2;
+}
+
+form {
+  font-family:'Karla', sans-serif;  
+}
+
+textarea {
+  outline: none;
+  border: 2px solid #333;
+  background-color: #f7f7f7;
+}
+
+
 
 /* 
   TEXT ELEMENTS -------------------
@@ -139,6 +190,7 @@ section h2.style2 {
   text-align: center;
   color: #000;
   padding-top: 0.75em;
+  line-height: 1.1em;
 }
 
 section h3.style1, section h3.style2 {
@@ -172,21 +224,34 @@ section h3.style2 {
 
 }
 
-
-
 section h4 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 2em;
+  font-family: 'Roboto-medium', sans-serif;
+  font-size: 1.25em;
   color: #333;
-  margin-bottom: 0;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.3em;
+}
+
+section h4.style2 {
+  font-family: 'Roboto-medium', sans-serif;
+  font-size: 1.5em;
+  color: #FB5A5A;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 1em;
+  text-align: center;
 }
 
 section h5 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.25em;
+  font-family: 'Roboto-medium', sans-serif;
+  font-size: 1em;
+  font-weight: 900;
   color: #333;
-  text-transform: uppercase;
-  margin-bottom: 0;
+  margin: 0;
+  padding:0;
 }
 
 section p {
@@ -196,6 +261,10 @@ section p {
     line-height: 1.8em;
 }
 
+section p.style2{
+  margin: 2em auto 5em auto;
+  font-size: .8em;
+}
 
 
 
@@ -246,6 +315,30 @@ figcaption, h3.figure {
 h3.figure {
     display: inline;
 }
+
+ul{
+  list-style-type: none;
+  list-style-position:inside;
+  margin-left:0;
+  padding:0;
+}
+
+li {
+  margin-top: 0.7em;
+}
+
+ul.test {
+  list-style-type: none;
+  list-style-position:inside;
+  margin-left:0;
+  padding:0;
+  text-align: center;
+}
+
+li.test {
+  margin: 0;
+}
+
 
 ul.citations {
   margin-left: 0.25em;
@@ -373,7 +466,7 @@ cite {
   text-decoration: none;
 }
 
-.cart-button {
+.button-dark {
   display: inline-block;
   border: 2px solid black;
   margin-top: 1em;
@@ -382,7 +475,6 @@ cite {
   font-family: 'Karla', sans-serif;
   font-size: 0.8em;
   font-weight: 400;
-  font-size: 0.8rem;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: .15rem;
@@ -395,7 +487,7 @@ cite {
   color: #FB5A5A;
 }
 
-.cart-button:hover {
+.button-dark:hover {
    -webkit-transition: background-color 0.4s, color 0.4s ease-out;
   transition: background-color 0.4s, color 0.4s, border-color 0.4s ease-out;
   background-color: #F5F5F5;
@@ -403,26 +495,38 @@ cite {
   border-color: #FB5A5A;
 }
 
-input[type=text] {
+input.quantity, input.newsletter {
   display: inline-block;
-  resize: horizontal;
-  width: 4em;
-  border: 2px solid black;
+  border: 2px solid #333;
   background-color: #f7f7f7;
   font-family:'Karla', sans-serif;
   font-size: 0.8em;
-  text-align: center;
+  font-weight: 400;
   margin: 1em 1em 0 0;
   padding: 1em 1em;
   color: black;
+  letter-spacing: .15rem;
 }
 
-input[type=text]:focus {
+input.quantity {
+  resize: horizontal;
+  width: 4em;
+  text-align: center;
+}
+
+input.newsletter {
+  width: 25em;
+  text-align: left;
+}
+
+
+input.quantity:focus, input.newsletter:focus {
   -webkit-transition: background-color 0.4s, color 0.4s ease-out;
   transition: border-color 0.4s ease-out;
   outline-width: 0;
   border-color: #FB5A5A;
 }
+
 
 
 

@@ -14,12 +14,18 @@
 	specifying if the class of an item starts with
 	'grid-col-', then we should apply the styling listed
 */
+[class^='grid-col-'] img {
+	text-align: center;
+
+}
 [class^='grid-col-'] {
 	float: left;
 	padding: 0;
 	text-align: left; /* center the content in this block by default */
 	width: 100%;  /* defining the default to be mobile first */
 }
+
+
 
 /*
 	Here we are clearing floated items to ensure that
@@ -141,7 +147,7 @@
 	Setting up break points for WEB
 */
 
-@media (min-width: 68em) {
+@media (min-width: 54em) {
 
 /* Define columns */
 .grid-col-1of12 {
