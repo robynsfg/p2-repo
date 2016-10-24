@@ -9,47 +9,141 @@
     <link href="css/main.css" rel="stylesheet"> 
     <link href="css/normalize.css" rel="stylesheet"> 
     <link href="css/grids.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Karla:700|Roboto:100,300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,700|Roboto:100,300" rel="stylesheet">
 
     <body>
 
+    <nav class="box">
+
+      <div class="box-item-logo">
+          <a href="index.html"><h3>logo goes here</h3></a>
+      </div>
+
+      <div class="box-item-hamburger">
+      <a href="javascript:void(0);" onclick="responsiveMenu()"><h3>☰</h3></a>
+      </div>
+      <div id="myTopnav" class="topnav">
+        <a class="box-item-nav button-nav" href="product_listing.html">Hammocks</a>
+        <a class="box-item-nav button-nav" href="explore.html">Explore</h3></a>
+        <a class="box-item-nav button-nav" href="about.html">About</a>
+        <a class="box-item-cart button-nav" href="cart.html">Cart</a>
+      </div>
+
+    </nav>
+
+
+        
     
     <section id="product-listing">
 
           <div>
-              <h2 class="style2">Explore</h2>
-              <h3 class="style2">Howdy there partner</h3>
+              <h2 class="style2">Hammocks 4 sale</h2>
+              <h3 class="style2">Come and get em here</h3>
           </div>
 
-          <div class="grid-row">
+         
+        <nav class="grid-row">
 
-          <div class="grid-col-6of12">
-            <figure>
-              <img src="img/placeholder.jpg" alt="Grey box">
-            </figure>
-          </div>
+            
+            
+            <div class="grid-col-4of12 product-listing">
+                
+                <figure>
+                    <img alt="Colourfully-striped Brazilian hammock" src="img/hammock2.png">
+                    <div class="product-listing-background">
+                        <figcaption>Striped Brazilian Hammock</figcaption>
+                        <p>Here's content, some more, hammocks are great. Just a little more writing to take up space.</p>
+                        <h3 class="figure">59$</h3>
+                    </div>
+                </figure>
+      
+            </div>
+            
+             <div class="grid-col-4of12 product-listing">
+                
+                <figure>
+                    <img alt="Colourfully-striped Brazilian hammock" src="img/hammock2.png">
+                    <div class="product-listing-background">
+                        <figcaption>Striped Brazilian Hammock</figcaption>
+                        <p>Here's content, some more, hammocks are great. Just a little more writing to take up space.</p>
+                        <h3 class="figure">59$</h3>
+                    </div>
+                </figure>
+      
+            </div>            
+            
+            <div class="grid-col-4of12 product-listing">
+               
+                <figure>
+                    <img alt="Colourfully-striped Brazilian hammock" src="img/hammock2.png">
+                    <div class="product-listing-background">
+                        <figcaption>Striped Brazilian Hammock</figcaption>
+                        <p>Here's content, some more, hammocks are great. Just a little more writing to take up space.</p>
+                        <h3 class="figure">59$</h3>
+                    </div>
+                </figure>
+      
+            </div>
+            
+                        <div class="grid-col-4of12 product-listing">
+                
+                <figure>
+                    <img alt="Colourfully-striped Brazilian hammock" src="img/hammock2.png">
+                    <div class="product-listing-background">
+                        <figcaption>Striped Brazilian Hammock</figcaption>
+                        <p>Here's content, some more, hammocks are great. Just a little more writing to take up space.</p>
+                        <h3 class="figure">59$</h3>
+                    </div>
+                </figure>
+      
+            </div>
+            
+             <div class="grid-col-4of12 product-listing">
+                
+                <figure>
+                    <img alt="Colourfully-striped Brazilian hammock" src="img/hammock2.png">
+                    <div class="product-listing-background">
+                        <figcaption>Striped Brazilian Hammock</figcaption>
+                        <p>Here's content, some more, hammocks are great. Just a little more writing to take up space.</p>
+                        <h3 class="figure">59$</h3>
+                    </div>
+                </figure>
+      
+            </div>            
+            
+            <div class="grid-col-4of12 product-listing">
+               
+                <figure>
+                    <img alt="Colourfully-striped Brazilian hammock" src="img/hammock2.png">
+                    <div class="product-listing-background">
+                        <figcaption>Striped Brazilian Hammock</figcaption>
+                        <p>Here's content, some more, hammocks are great. Just a little more writing to take up space.</p>
+                        <h3 class="figure">59$</h3>
+                    </div>
+                </figure>
+      
+            </div>
 
-          <div class="grid-col-6of12">
-            <figure>
-              <img src="img/placeholder.jpg" alt="Grey box">
-            </figure>
-
-          </div>
-
-          <div class="grid-col-6of12">
-            <a href="#">
-            <figure>
-              <img src="img/placeholder.jpg" alt="Grey box">
-            </figure>
-            </a>
-
-          </div>
-
-          </div>
+            
+        </nav>
+        
     
 
     </section>
 
+
+<script>
+  function responsiveMenu() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+          x.className += " responsive";
+          document.getElementById("myTopnav").style.display = "block";
+      } else {
+          x.className = "topnav";
+          document.getElementById("myTopnav").style.display = "none";
+      }
+  }
+  </script>
 
 
    	</body>

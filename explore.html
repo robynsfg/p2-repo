@@ -4,15 +4,121 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Explore</title>
+    <title>Style Guide</title>
 
-    <body>
-    	
-    <p>Photos n shit</p>
+    <link href="css/main.css" rel="stylesheet"> 
+    <link href="css/normalize.css" rel="stylesheet"> 
+    <link href="css/grids.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,700|Roboto:100,300" rel="stylesheet">
 
-    </body>
+
 
 
   </head>
-</html>
 
+  <body>
+
+  
+    <nav class="box">
+
+      <div class="box-item-logo">
+          <a href="index.html"><h3>logo goes here</h3></a>
+      </div>
+
+      <div class="box-item-hamburger">
+      <a href="javascript:void(0);" onclick="responsiveMenu()"><h3>☰</h3></a>
+      </div>
+      <div id="myTopnav" class="topnav">
+        <a class="box-item-nav button-nav" href="product_listing.html">Hammocks</a>
+        <a class="box-item-nav button-nav" href="explore.html">Explore</h3></a>
+        <a class="box-item-nav button-nav" href="about.html">About</a>
+        <a class="box-item-cart button-nav" href="cart.html">Cart</a>
+      </div>
+
+    </nav>
+
+
+     <section id="explore-main">
+
+      <div class="explore-container">
+              <h2 class="style2">Explore</h2>
+              <h3 class="style2">We have to write more hammock content here so im going to write a couple lines to explain what this is all about </h3>
+
+          <div class="grid-row">
+
+          <div class="grid-col-12of12">
+            
+              <div class="explore-listing">
+              
+                  <figure>
+                        <div class="explore-listing-hover"> <img src="img/explore-1.jpg" alt="A traveller standing within some mountains">
+                          <figcaption>Brad's Mountains</figcaption>
+                             <div class="explore-background">
+                                 <p>Brad took some dope instagram pics from his comfy hammock. Brad did other stuff that took up two lines of copy because it looks awkward with only one line ha ha.</p>
+                             </div>
+                        </div>
+                    </figure>
+              </div>
+              
+          </div>
+
+          <div class="grid-col-6of12">
+            
+              <div class="explore-listing">
+              
+                  <figure>
+                      <div class="explore-listing-hover"> <img src="img/explore-2.jpg" alt="A girl dancing in the ocean">
+                        <figcaption>Party in Cancun</figcaption>
+                        <div class="explore-background">
+                                <p>Brad took some dope instagram pics from his comfy hammock. Less content here.</p>
+                        </div>
+                     </div>
+                  </figure>
+              </div>
+
+          </div>
+
+         <div class="grid-col-6of12">
+            
+              <div class="explore-listing">
+              
+                  <figure>
+                      <div class="explore-listing-hover"> <img src="img/explore-3.jpg" alt="A man on a hammock on a boat">
+                      
+                        <figcaption>Vietnam Boats</figcaption>
+                         <div class="explore-background">
+                              <p>Brad took some dope instagram pics from his comfy hammock. Less content here.</p>
+                              </div>
+                    </div>
+                  </figure>
+
+            </div>
+       
+          </div>
+      </div>
+
+    </section>
+
+      <footer id="footer">
+        <div class="grid-col-3of12">
+          <h3 class="style1">Some bullshit</h3>
+        </div>
+      </footer>
+
+
+  <script>
+  function responsiveMenu() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+          x.className += " responsive";
+          document.getElementById("myTopnav").style.display = "block";
+      } else {
+          x.className = "topnav";
+          document.getElementById("myTopnav").style.display = "none";
+      }
+  }
+  </script>
+
+
+  </body>
+</html>

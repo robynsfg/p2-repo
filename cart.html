@@ -4,15 +4,129 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Cart</title>
+    <title>Style Guide</title>
+
+    <link href="css/main.css" rel="stylesheet"> 
+    <link href="css/normalize.css" rel="stylesheet"> 
+    <link href="css/grids.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,700|Roboto:100,300" rel="stylesheet">
 
 
-    <body>
-    	
-    	<p>Your cart n shit</p>
-    	
-    </body>
+
 
   </head>
-</html>
 
+  <body>
+
+  
+    <nav class="box">
+
+      <div class="box-item-logo">
+          <a href="index.html"><h3>logo goes here</h3></a>
+      </div>
+
+      <div class="box-item-hamburger">
+      <a href="javascript:void(0);" onclick="responsiveMenu()"><h3>☰</h3></a>
+      </div>
+      <div id="myTopnav" class="topnav">
+        <a class="box-item-nav button-nav" href="product_listing.html">Hammocks</a>
+        <a class="box-item-nav button-nav" href="explore.html">Explore</h3></a>
+        <a class="box-item-nav button-nav" href="about.html">About</a>
+        <a class="box-item-cart button-nav" href="cart.html">Cart</a>
+      </div>
+
+    </nav>
+
+
+
+      <section class="explore-container">
+                        <h2 class="style2">Cart</h2>
+
+          <div class="cart">
+              
+              <div class="divider-line">
+                  <div class="grid-row">
+                  
+                      <div class="grid-col-9of12">
+                            <h4>ITEM</h4>
+                      </div>
+                      
+                       <div class="grid-col-1of12">                     
+                           <div class="center-align"><h4>PRICE</h4></div>
+                       </div>
+                     
+                        <div class="grid-col-1of12">                                          
+                            <div class="center-align"><h4>QTY</h4></div>
+                       </div>
+
+
+                        <div class="grid-col-1of12">                     
+                            <div class="right-align"><h4>REMOVE</h4></div>    
+                        </div>
+
+                   </div>
+                  
+               </div>
+              
+                <div class="divider-line">
+                    
+                    <div class="grid-row cartstuff-container">
+                  
+                      <div class="grid-col-9of12">
+                            <a href="product_detail.html"><img src="img/hammockpng.png" alt="a hammock"><h4 class="style2">STRIPED BRAZILLIAN HAMMOCK</h4></a>
+                      </div>
+                      
+                       <div class="grid-col-1of12">                     
+                           <div class="center-align"><h4 class="style2">$59</h4></div>
+                       </div>
+                     
+                        <div class="grid-col-1of12">                                          
+                            <div class="center-align"><input class="quantity" type="text" placeholder="1"></div>
+                       </div>
+
+
+                        <div class="grid-col-1of12">                     
+                            <div class="center-align"><h4 class="style2">X</h4>  </div>  
+                        </div>
+
+                   </div>
+                  
+                </div>
+              
+              <div class="cart-container">
+                
+                  <a class="button-dark float-left" href="product_listing.html">Continue Shopping</a>
+
+                  <div class="cart-total">Cart Total: $59</div>
+                  
+                <a class="button-red" href="product_listing.html">Check Out</a>
+
+              </div>
+              
+              
+        </div>
+    </section>
+
+      <footer id="footer">
+        <div class="grid-col-3of12">
+          <h3 class="style1">Some bullshit</h3>
+        </div>
+      </footer>
+
+
+  <script>
+  function responsiveMenu() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+          x.className += " responsive";
+          document.getElementById("myTopnav").style.display = "block";
+      } else {
+          x.className = "topnav";
+          document.getElementById("myTopnav").style.display = "none";
+      }
+  }
+  </script>
+
+
+  </body>
+</html>

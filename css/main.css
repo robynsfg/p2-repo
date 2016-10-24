@@ -14,7 +14,6 @@ a{
 
 section:not([id]) {
   padding: 0.5em 0;
-  border-top: 1px dotted #333;
 }
 
 
@@ -63,6 +62,8 @@ section:not([id]) {
   width: 70%;
   clear:both;
 }
+
+
 
 .photo-grid-container img{
   padding: 1rem;
@@ -126,6 +127,8 @@ section:not([id]) {
 }
 
 .image-product-detail {
+  height: auto;
+}
 
 }
 
@@ -156,6 +159,84 @@ textarea {
   background-color: #f7f7f7;
 }
 
+
+.product-listing{
+    position: relative;
+
+}
+
+
+
+.product-listing img{
+    margin: 1em;
+    width: 50%;
+    transition: all .5s ease;
+
+}
+
+.product-listing-caption{
+    position: absolute;
+    width: 42%;
+    right: 2em;
+    top: 1vw;
+
+}
+
+.explore-listing{
+    position: relative;
+
+}
+
+.explore-listing img{
+    margin: 1em;
+    width: 70%;
+    transition: all .5s ease-out;
+}
+
+.cart{
+    background: white;
+    margin:2em;
+    padding: 2em;
+}
+
+.cart img{
+    width: 6rem;
+}
+
+
+.divider-line{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px #a0a0a0 solid;
+    padding: 1rem 0 1rem 0;
+}
+
+.cart-container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4rem 0 1rem 0;
+    text-align: right;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+
+.cartstuff-container{
+    padding: 3rem 0 3rem 2rem;
+}
+
+.cart-total{
+    padding: 0 0 2rem 0;
+}
+
+.float-left{
+    float: left;
+    display: inline;
+}
+>>>>>>> Stashed changes
 
 
 /* 
@@ -224,25 +305,29 @@ section h3.style2 {
 
 }
 
-section h4 {
+
+
+section h4, section h4.style2 {
   font-family: 'Roboto-medium', sans-serif;
-  font-size: 1.25em;
-  color: #333;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  color: #3d3d3d;
   font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
   margin-bottom: 0.3em;
 }
 
+
 section h4.style2 {
-  font-family: 'Roboto-medium', sans-serif;
-  font-size: 1.5em;
+font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  -webkit-transition: color 0.4s ease-out;
+  transition: color 0.4s ease-out;
+}
+
+section h4.style2:hover {
   color: #FB5A5A;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-top: 1em;
-  text-align: center;
+    cursor: pointer;
 }
 
 section h5 {
@@ -257,7 +342,7 @@ section h5 {
 section p {
 
     margin: 1em;
-    font-size: .8em;
+    font-size: .75rem;
     line-height: 1.8em;
 }
 
@@ -266,8 +351,13 @@ section p.style2{
   font-size: .8em;
 }
 
+.right-align{
+    text-align: right;
+}
 
-
+.center-align{
+    text-align: center;
+}
 
 figure {
     display: inline;
@@ -276,16 +366,45 @@ figure {
     width: 100%;
 }
 
+
 .product-listing-background{
-    z-index: -999;
+    position: relative;
+    top: 0;
+    left: 0;
     margin-top: 2vw;
+    z-index: -1;
     padding-bottom: 2em;
     margin-right: 1em;
     background-image: linear-gradient(to right,transparent 0.1%, #FB5A5A 0.1%, #FB5A5A 50%, transparent 50%, transparent);
     background-position: 100% 0;
     background-size: 200% 100%;
-    transition: all .5s ease-out;
+    transition: all .5s ease;
     
+}
+
+.explore-background{
+    position: relative;
+    top: 1rem;
+    left: 0;
+    width: 105%;
+    z-index: -1;
+    padding: 1em 2em 1em 2em;
+    margin-right: 1em;
+    background-image: linear-gradient(to right,transparent 0.1%, #FB5A5A 0.1%, #FB5A5A 50%, transparent 50%, transparent);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .5s ease;
+}
+
+@media (max-width: 70em) {
+    
+    .explore-background{
+        height:30vw;
+    }
+}
+
+.caption-z{
+    z-index: 10;
 }
 
 @media (max-width: 90em) {
@@ -301,16 +420,94 @@ figure {
 
 .product-listing:hover .product-listing-background{
     background-position: 0 0;
+    color: white;
     
 }
+
+.explore-listing-hover p{
+     transition: all .5s ease;
+}
+
+.explore-listing-hover:hover .explore-background{
+    background-position: 0 0;
+}
+
+.explore-listing-hover:hover p{
+    color: white;
+}
+
+
+.product-listing:hover img{
+    cursor: pointer;
+    -webkit-filter: sepia(.5) hue-rotate(-30deg);
+    filter: sepia(.5) hue-rotate(-30deg);
+}
+
+.explore-listing img:hover{
+    cursor: pointer;
+    -webkit-filter: sepia(.5) hue-rotate(-30deg);
+    filter: sepia(.5) hue-rotate(-30deg);
+}
+
+
+
+
+.product-listing{
+    position: relative;
+}
+
+
+
+.product-listing img{
+    margin: 1em;
+    width: 50%;
+}
+
+.product-listing-caption{
+    width: 42%;
+    right: 2em;
+    top: 1rem;
+    margin-right: 2em;
+
+}
+
+
     
 figcaption, h3.figure {
 
-  font-family: 'Roboto', sans-serif;
-  font-size: 1em;
-  text-align: center;
+  font-family: 'Karla', sans-serif;
+  font-size: 1.2rem;
   margin-top: 0.5em;
+  padding: 2vw 1rem 0 0; 
+  z-index: 1000;
+
 }
+
+.grid-col-12of12 figcaption{
+    position: relative;
+    left:-12rem;
+    width: 125%;
+    font-size: 2.5rem;
+    padding-top: 4vw;
+}
+
+.grid-col-6of12 figcaption{
+    position: relative;
+    left:-12rem;
+    width: 125%;
+    font-size: 2.2rem;
+    padding-top: 3vw;
+}
+
+
+
+
+
+
+.explore-listing p{
+    font-size: .9rem;
+}
+
 
 h3.figure {
     display: inline;
@@ -426,6 +623,7 @@ cite {
 
 .product-listing{
     position: relative;
+    padding-right: 2rem;
 }
 
 
@@ -460,16 +658,22 @@ cite {
   padding: 1em 2em;
   color: white;
   font-family: 'Karla', sans-serif;
-
-  font-size: 0.8em;
+  font-size: 0.8rem;
+  letter-spacing: .1rem;
   text-transform: uppercase;
   text-decoration: none;
+  -webkit-transition: background-color 0.4s, color 0.4s ease-out;
+  transition: background-color 0.4s, color 0.4s ease-out;
+}
+
+.explore-listing .button{
+    color:#2b2b2b;
+      border: 2px solid #939393;
 }
 
 .button-dark {
   display: inline-block;
   border: 2px solid black;
-  margin-top: 1em;
   padding: 1em 2em;
   color: black;
   font-family: 'Karla', sans-serif;
@@ -478,18 +682,39 @@ cite {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: .15rem;
+   -webkit-transition: background-color 0.4s, color 0.4s ease-out;
+  transition: background-color 0.4s, color 0.4s, border-color 0.4s ease-out;    
+}
+
+.button-red{
+  display: inline-block;
+  padding: 1em 2em;
+  background-color: #FB5A5A;
+  color: white;
+  font-family: 'Karla', sans-serif;
+  font-size: 0.8em;
+  font-weight: 400;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: .15rem;
+  -webkit-transition: background-color 0.4s, color 0.4s ease-out;
+  transition: background-color 0.4s, color 0.4s, border-color 0.4s ease-out;
+}
+
+.button-red:hover{
+  background-color: #F5F5F5;
+  color: #FB5A5A;
 }
 
 .button:hover {
- -webkit-transition: background-color 0.4s, color 0.4s ease-out;
-  transition: background-color 0.4s, color 0.4s ease-out;
+
   background-color: #F5F5F5;
   color: #FB5A5A;
 }
 
 .button-dark:hover {
-   -webkit-transition: background-color 0.4s, color 0.4s ease-out;
-  transition: background-color 0.4s, color 0.4s, border-color 0.4s ease-out;
+
   background-color: #F5F5F5;
   color: #FB5A5A;
   border-color: #FB5A5A;
@@ -538,4 +763,6 @@ img {
     height: auto;
     width: auto;
     max-width: 100%;
+        float: left;
+
 }

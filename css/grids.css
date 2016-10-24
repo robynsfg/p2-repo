@@ -20,7 +20,7 @@
 }
 [class^='grid-col-'] {
 	float: left;
-	padding: 0;
+	padding: 0 2rem 0 0;
 	text-align: left; /* center the content in this block by default */
 	width: 100%;  /* defining the default to be mobile first */
 }
@@ -146,13 +146,49 @@
 /*
 	Setting up break points for WEB
 */
+@media (min-width: 68em) {
+  
+    .grid-col-6of12 {
+	width: 50%;
+    } 
+    
+    .grid-col-12of12 {
+	width: 100%;
+    }
+    
+}
 
-@media (min-width: 54em) {
+
+
+@media (min-width: 80em) {
+    
+    .grid-col-4of12 {
+        width: 50%;
+        padding-right: 2rem;
+
+    }
+}
+
+
+@media (min-width: 50em) {
+
+    .grid-col-1of12 {
+	width: 8.333%;	
+        padding: 0;
+
+}
+   .grid-col-9of12 {
+	width: 75%;
+    padding: 0;
+} 
+    
+}
+
+
+@media (min-width: 100em) {
 
 /* Define columns */
-.grid-col-1of12 {
-	width: 8.333%;	
-}
+
 
 .grid-col-2of12 {
 	width: 16.667%;	
@@ -164,6 +200,7 @@
 
 .grid-col-4of12 {
 	width: 33.333%;
+    padding-right: 4rem;
 }
 
 .grid-col-5of12 {
@@ -182,9 +219,7 @@
   width: 66.667%;
 }
 
-.grid-col-9of12 {
-	width: 75%;
-}
+
 
 .grid-col-10of12 {
 	width: 83.333%;
@@ -301,6 +336,19 @@
 
 }
 
+.box-item-large {
+	-webkit-flex: 4 1 20em;
+	-ms-flex: 4 1 20em;
+	flex: 4 1 20em;
+
+}
+
+.box-item-last{
+    -webkit-flex: .5 1 auto;
+	-ms-flex: .5 1 auto;
+	flex: .5 1 auto;
+    text-align: right;
+}
 
 .box-item-text {
 	/* 
