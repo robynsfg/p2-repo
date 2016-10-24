@@ -160,14 +160,7 @@
 
 
 
-@media (min-width: 80em) {
-    
-    .grid-col-4of12 {
-        width: 50%;
-        padding-right: 2rem;
 
-    }
-}
 
 
 @media (min-width: 50em) {
@@ -185,7 +178,16 @@
 }
 
 
-@media (min-width: 100em) {
+@media (min-width: 50em) {
+    
+    .grid-col-4of12 {
+        width: 50%;
+        padding-right: 2rem;
+
+    }
+}
+
+@media (min-width: 90em) {
 
 /* Define columns */
 

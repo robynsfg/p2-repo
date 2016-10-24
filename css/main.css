@@ -477,10 +477,26 @@ figcaption, h3.figure {
 
   font-family: 'Karla', sans-serif;
   font-size: 1.2rem;
-  margin-top: 0.5em;
-  padding: 2vw 1rem 0 0; 
+  margin-top: 0em;
+  padding: 0vw 1rem 0 0; 
   z-index: 1000;
 
+}
+
+@media (max-width: 60em) {
+    
+    .product-listing-background{
+      margin-top: 1.2vw;      
+
+    }
+}
+
+@media (max-width: 30em){
+    
+    .product-listing-background{
+      margin-top: 2vw;      
+
+    }
 }
 
 .grid-col-12of12 figcaption{
