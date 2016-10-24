@@ -307,7 +307,7 @@ section h3.style2 {
 
 
 
-section h4, section h4.style2 {
+h4, section h4, section h4.style2, section h4.style3 {
   font-family: 'Roboto-medium', sans-serif;
   font-size: .9rem;
   letter-spacing: .1rem;
@@ -328,6 +328,11 @@ font-family: 'Roboto', sans-serif;
 section h4.style2:hover {
   color: #FB5A5A;
     cursor: pointer;
+}
+
+section h4.style3{
+    text-align: center;
+    color: #FB5A5A;
 }
 
 section h5 {
