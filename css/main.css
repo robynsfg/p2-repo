@@ -16,20 +16,33 @@ section:not([id]) {
   padding: 0.5em 0;
 }
 
+.header-logo{
+    height: 6vw;
+    margin: 1rem 0 1rem 0;
+}
+
+@media (min-width: 68em){
+    .header-logo{
+        margin: 1rem 0 1rem 0;
+        height:4vw;
+    }
+}
 
 #hero-hammock{
   width: 100%;
   display:inline-block;
   position: relative;
+  background: black;
 }
 
 #hero-hammock img {
   width: 100%;
   display: block;
+  opacity: .8;
 }
 
 .hero-padding{
-  width: 30%;
+  width: 40%;
   position: absolute;
   left: 8vw;
   top: 8vw;
@@ -44,6 +57,10 @@ section:not([id]) {
     left: 0;
     top: 5vw;
   } 
+    
+  #hero-hammock img{
+    opacity: 0.7;
+    }
 
 }
 
@@ -184,6 +201,7 @@ textarea {
 
 .explore-listing{
     position: relative;
+    padding-right: 2rem;
 
 }
 
@@ -203,6 +221,26 @@ textarea {
     width: 6rem;
 }
 
+
+.header-background-box{
+    position: relative;
+    padding: 0;
+    color: black;
+    width: 80%;
+    margin: 2rem 0 8rem 0;
+}
+
+.header-subhead{
+    z-index: -1;
+    padding: 1.5rem 4rem 1.5rem 5rem;
+    background-color: #FB5A5A;
+    position: absolute;
+    margin-top: 2rem;
+    left: 0rem;
+    top: 0rem;
+    color: white;
+    width: 100%;
+}
 
 .divider-line{
     width: 80%;
@@ -236,7 +274,6 @@ textarea {
     float: left;
     display: inline;
 }
->>>>>>> Stashed changes
 
 
 /* 
@@ -256,33 +293,65 @@ section h1 {
   text-transform: uppercase;
 }
 
-section h2.style1, section h2.style2 {
+h2, section h2.style1, section h2.style2 {
   font-family: 'Karla', serif;
   font-weight: 700;
   font-size: 3.4em;
-  margin: 0;
+  line-height: 1em;
+  margin: 0 0 1rem 0;
 }
 
 section h2.style1 {
   color: white;
   padding: 0;
 }
+
+
+
 section h2.style2 {
-  text-align: center;
-  color: #000;
-  padding-top: 0.75em;
+  margin-top: 1rem;
   line-height: 1.1em;
+  padding-left: 4rem;
 }
+
+section h3{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  letter-spacing: .06rem;
+  margin: 0;
+}
+
+
+
 
 section h3.style1, section h3.style2 {
   font-family: 'Roboto', sans-serif;
-  font-weight: 100;
+  font-size: 1.2rem;
+  font-weight: 300;
   letter-spacing: .05em;
-  line-height: 1.6rem;
   color: white;
-  margin: 01em 0 0.5em 0;
+  margin: .5rem 0 0.5em 0;
 }
 
+@media (max-width: 70em) {
+    
+    section h2.style1{
+        font-size:6vw;
+    }
+    
+    section h3.style1, section h3.style2 {
+          font-size: 2vw;
+    }
+    
+   
+}
+
+@media (max-width: 40em) {
+    section h3.style1, section h3.style2 {
+          font-size: 3vw;
+    }
+}
 
 section h3.style1 {
   color: white;
@@ -345,16 +414,16 @@ section h5 {
 }
 
 section p {
-
-    margin: 1em;
-    font-size: .75rem;
+    font-size: 1rem;
     line-height: 1.8em;
 }
 
 section p.style2{
-  margin: 2em auto 5em auto;
-  font-size: .8em;
+  margin: 2rem auto 5rem auto;
+  font-size: 1rem;
 }
+
+
 
 .right-align{
     text-align: right;
@@ -372,53 +441,41 @@ figure {
 }
 
 
-.product-listing-background{
+.product-listing-background, .explore-background{
     position: relative;
     top: 0;
     left: 0;
     margin-top: 2vw;
     z-index: -1;
-    padding-bottom: 2em;
-    margin-right: 1em;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    margin-right: 1rem;
     background-image: linear-gradient(to right,transparent 0.1%, #FB5A5A 0.1%, #FB5A5A 50%, transparent 50%, transparent);
     background-position: 100% 0;
     background-size: 200% 100%;
     transition: all .5s ease;
-    
 }
 
 .explore-background{
-    position: relative;
-    top: 1rem;
-    left: 0;
     width: 105%;
-    z-index: -1;
-    padding: 1em 2em 1em 2em;
-    margin-right: 1em;
-    background-image: linear-gradient(to right,transparent 0.1%, #FB5A5A 0.1%, #FB5A5A 50%, transparent 50%, transparent);
-    background-position: 100% 0;
-    background-size: 200% 100%;
-    transition: all .5s ease;
+    padding: 1rem 2rem 1rem 2rem;
 }
 
-@media (max-width: 70em) {
-    
-    .explore-background{
-        height:30vw;
-    }
+.product-listing-background{
+    padding-right: 1rem;
 }
 
-.caption-z{
-    z-index: 10;
+.explore-background h3{
+    font-size: 1rem;
 }
+
+
 
 @media (max-width: 90em) {
     
     .product-listing-background{
             margin-top: 5vw;
             margin-right: 3em;
-
-
     }
 
 }
@@ -429,15 +486,17 @@ figure {
     
 }
 
-.explore-listing-hover p{
-     transition: all .5s ease;
+.explore-listing-hover h3{
+    margin: 0;
+    padding: 0;
+    transition: all .5s ease;
 }
 
 .explore-listing-hover:hover .explore-background{
     background-position: 0 0;
 }
 
-.explore-listing-hover:hover p{
+.explore-listing-hover:hover h3{
     color: white;
 }
 
@@ -471,7 +530,6 @@ figure {
 .product-listing-caption{
     width: 42%;
     right: 2em;
-    top: 1rem;
     margin-right: 2em;
 
 }
@@ -483,7 +541,7 @@ figcaption, h3.figure {
   font-family: 'Karla', sans-serif;
   font-size: 1.2rem;
   margin-top: 0em;
-  padding: 0vw 1rem 0 0; 
+  padding: 0vw 0 0 0; 
   z-index: 1000;
 
 }
@@ -504,25 +562,55 @@ figcaption, h3.figure {
     }
 }
 
-.grid-col-12of12 figcaption{
+.grid-col-12of12 figcaption, .grid-col-6of12 figcaption{
     position: relative;
     left:-12rem;
     width: 125%;
-    font-size: 2.5rem;
+    font-size: 3.8vw;
     padding-top: 4vw;
 }
 
 .grid-col-6of12 figcaption{
-    position: relative;
-    left:-12rem;
-    width: 125%;
-    font-size: 2.2rem;
+    left:-14rem;
+     width: 150%;
+    font-size: 3.2vw;
     padding-top: 3vw;
 }
 
 
+.explore-listing-hover{
+    z-index: 1002;
+}
+
+@media (max-width: 80em){
+    
+    .explore-listing-hover p{
+        
+     
+    }
+}
 
 
+@media (max-width: 68em){
+   
+    .grid-col-6of12 figcaption{
+    left:-12rem;
+     width: 125%;
+    font-size: 3.8vw;
+    padding-top: 4vw;
+    } 
+}
+
+
+
+@media (max-width: 45em) {
+    
+    .grid-col-12of12 figcaption, .grid-col-6of12 figcaption{
+        font-size: 5vw;
+        width: 140%;
+        left: -9rem;
+    }
+}
 
 
 .explore-listing p{
@@ -581,6 +669,7 @@ cite {
 
 #myTopnav{
   display: block;
+  margin: 1rem 0 0 0;
 }
 
 /* 
@@ -600,6 +689,10 @@ cite {
   transition: background-color 0.5s ease-out;
 }
 
+.box{
+    background: white;
+}
+
 .box-item-hamburger{
   display: none;
 }
@@ -608,10 +701,13 @@ cite {
     margin: 0 0 0 2rem;
   }
 
-@media (max-width: 35em) {
+@media (max-width: 68em) {
 
+    
   .box-item-hamburger{
     display:inline; 
+    margin: .7vw 0 0 0 ;
+
   }
 
   #myTopnav{
@@ -620,12 +716,21 @@ cite {
   }
 
   .button-nav {
-    text-align: center;
-    padding: 0.5rem 0 1rem 0;
-    display: block;
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 0.5rem 0 1rem 0;
+        display: block;
   }
-
-
+    section h3{
+        font-size: 1.6rem;
+    }
+    
+    section h2.style2 {
+      font-size:3rem;
+    }
+    .explore-listing p{
+      font-size:14px;
+    }
 
 }
 
@@ -672,55 +777,39 @@ cite {
   color: #FB5A5A;
 }
 
-.button {
+.button, .button-dark, .button-red {
   display: inline-block;
   border: 2px solid white;
   margin-top: 1em;
-  padding: 1em 2em;
+  padding: 1rem 2rem;
   color: white;
   font-family: 'Karla', sans-serif;
-  font-size: 0.8rem;
-  letter-spacing: .1rem;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: .15rem;
   text-transform: uppercase;
   text-decoration: none;
   -webkit-transition: background-color 0.4s, color 0.4s ease-out;
   transition: background-color 0.4s, color 0.4s ease-out;
 }
 
-.explore-listing .button{
-    color:#2b2b2b;
-      border: 2px solid #939393;
-}
+
 
 .button-dark {
-  display: inline-block;
   border: 2px solid black;
-  padding: 1em 2em;
   color: black;
-  font-family: 'Karla', sans-serif;
-  font-size: 0.8em;
-  font-weight: 400;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: .15rem;
-   -webkit-transition: background-color 0.4s, color 0.4s ease-out;
-  transition: background-color 0.4s, color 0.4s, border-color 0.4s ease-out;    
 }
 
 .button-red{
-  display: inline-block;
-  padding: 1em 2em;
   background-color: #FB5A5A;
   color: white;
-  font-family: 'Karla', sans-serif;
-  font-size: 0.8em;
-  font-weight: 400;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: .15rem;
-  -webkit-transition: background-color 0.4s, color 0.4s ease-out;
-  transition: background-color 0.4s, color 0.4s, border-color 0.4s ease-out;
+}
+
+
+
+.explore-listing .button{
+    color:#2b2b2b;
+      border: 2px solid #939393;
 }
 
 .button-red:hover{

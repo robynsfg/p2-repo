@@ -20,7 +20,7 @@
 }
 [class^='grid-col-'] {
 	float: left;
-	padding: 0 2rem 0 0;
+	padding: 0;
 	text-align: left; /* center the content in this block by default */
 	width: 100%;  /* defining the default to be mobile first */
 }
@@ -37,7 +37,9 @@
 	clear: both;
 }
 
-
+ .grid-col-1of3 {
+	   width: 33.333%;
+    }
 /*
 	Setting up break points for Small Size (multi-column for mobile) used in the cart and checkout
 */
@@ -146,7 +148,7 @@
 /*
 	Setting up break points for WEB
 */
-@media (min-width: 68em) {
+@media (min-width: 75em) {
   
     .grid-col-6of12 {
 	width: 50%;
@@ -182,9 +184,10 @@
     
     .grid-col-4of12 {
         width: 50%;
-        padding-right: 2rem;
 
     }
+    
+   
 }
 
 @media (min-width: 90em) {
@@ -204,6 +207,11 @@
 	width: 33.333%;
     padding-right: 4rem;
 }
+
+.grid-col-1of3 {
+	width: 33.333%;
+}
+    
 
 .grid-col-5of12 {
 	width: 41.667%;	
@@ -367,18 +375,18 @@
 /*
 	We can use media queries to apply different styles at specific sizes. In this case, we are specifying when the browser window's width is less than 30em, we should apply the styling within the brackets.
 */
-@media (max-width: 35em) {
+@media (max-width: 68em) {
 	
 	.box-item-logo {
-	-webkit-flex: 3 1 auto;
-	-ms-flex: 3 1 auto;
-	flex: 3 1 auto;
+	-webkit-flex: 5 1 auto;
+	-ms-flex: 5 1 auto;
+	flex: 5 1 auto;
 	}
 
 	.box-item-hamburger {
-	-webkit-flex: .5 1 auto;
-	-ms-flex: .5 1 auto;
-	flex: .5 1 auto;
+	-webkit-flex: .3 1 auto;
+	-ms-flex: .3 1 auto;
+	flex: .3 1 auto;
 	}
 
 	.box-item-cart {
