@@ -79,7 +79,9 @@ section:not([id]) {
   clear:both;
 }
 
-
+.product-detail-container{
+  width: 95%;
+}
 
 .photo-grid-container img{
   padding: 1rem;
@@ -124,18 +126,18 @@ section:not([id]) {
   line-height: 1.7em;
 }
 
-.product-extra-info img {
+.product-description img {
   margin-top: 1em;
   width: 30%;
   margin-right: 1rem;
 }
 
-.product-extra-info h3{
+.product-description h3{
   font-family: 'Karla';
   text-transform: uppercase;
 }
 
-.product-extra-info:hover h4{
+.product-description:hover h4{
   color: #FB5A5A;
 }
 
@@ -182,7 +184,10 @@ section:not([id]) {
   height: auto;
 }
 
-
+#product-detail{
+  position: relative;
+  float: left;
+}
 
 .redcolor, .bluecolor {
   display: inline-block;
