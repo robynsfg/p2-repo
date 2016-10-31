@@ -40,6 +40,10 @@
  .grid-col-1of3 {
 	   width: 33.333%;
     }
+
+ .grid-col-1of2 {
+	width: 100%;
+  }
 /*
 	Setting up break points for Small Size (multi-column for mobile) used in the cart and checkout
 */
@@ -169,14 +173,31 @@
 
     .grid-col-1of12 {
 	width: 8.333%;	
-        padding: 0;
+    padding: 0;
+	}
 
-}
    .grid-col-9of12 {
 	width: 75%;
     padding: 0;
-} 
+	} 
     
+    .grid-col-1of2 {
+	width: 50%;
+  	}
+
+
+	.grid-col-7of12 {
+		width: 58.333%;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.grid-col-5of12 {
+		width: 41.667%;	
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+
 }
 
 
@@ -213,17 +234,12 @@
 }
     
 
-.grid-col-5of12 {
-	width: 41.667%;	
-}
+
 
 .grid-col-6of12 {
 	width: 50%;
 }
 
-.grid-col-7of12 {
-	width: 58.333%;
-}
 
 .grid-col-8of12 {
   width: 66.667%;
