@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Style Guide</title>
+    <title>Review Order</title>
     <link href="css/main.css" rel="stylesheet"> 
     <link href="css/normalize.css" rel="stylesheet"> 
     <link href="css/grids.css" rel="stylesheet">
@@ -30,66 +30,97 @@
 
 
       <section class="explore-container">
-                        <h2 class="style2">Cart</h2>
+                        <h2 class="style2">Review Order</h2>
 
-          <div class="cart">
+          <div class="cart-review">
               
               <div class="divider-line">
                   <div class="grid-row">
                   
                       <div class="grid-col-9of12">
-                            <h4>ITEM</h4>
-                      </div>
-                      
-                       <div class="grid-col-1of12">                     
-                           <div class="center-align"><h4>PRICE</h4></div>
-                       </div>
-                     
-                        <div class="grid-col-1of12">                                          
-                            <div class="center-align"><h4>QTY</h4></div>
-                       </div>
-
-
-                        <div class="grid-col-1of12">                     
-                            <div class="right-align"><h4>REMOVE</h4></div>    
-                        </div>
+                            <h4>Order Overview</h4>
+                      </div>                
 
                    </div>
                   
-               </div>
+              </div>
               
                 <div class="divider-line">
                     
-                    <div class="grid-row cartstuff-container">
+                     <div class="grid-row cartstuff-container">
                   
-                      <div class="grid-col-9of12">
-                            <a href="product_detail.html"><img src="img/hammockpng.png" alt="a hammock"><h4 class="style2">STRIPED BRAZILLIAN HAMMOCK</h4></a>
+                      <div class="grid-col-6of12">
+                            <a href="product_detail.html"><img src="img/hammockpng.png" alt="a hammock"></a>
                       </div>
                       
-                       <div class="grid-col-1of12">                     
-                           <div class="center-align"><h4 class="style2">$59</h4></div>
-                       </div>
+                      <div class="grid-col-6of12">
+                            <h4>Striped Brazilian Hammock</h4>
+                      </div>
+
+                      <div class="grid-col-6of12">
+                            <h4 class="style2">Quantity: 1</h4>
+                      </div>
+
+                      <div class="grid-col-6of12">
+                            <h4 class="style2">$59</h4>
+                      </div>
+
+                      <div class="grid-col-6of12">
+                            <h4>Total Cost: $59</h4>
+                      </div>
+                      
                      
-                        <div class="grid-col-1of12">                                          
-                            <div class="center-align"><input class="quantity" type="text" placeholder="1"></div>
-                       </div>
-
-
-                        <div class="grid-col-1of12">                     
-                            <div class="center-align"><h4 class="style2">X</h4>  </div>  
-                        </div>
 
                    </div>
+
+
+                   <div class="grid-row">
                   
-                </div>
+                      <div class="grid-col-9of12">
+                            <h4>Shipping Info</h4>
+                      </div> 
+
+                   </div>
+
+                  </div>
+ 
+                 <div class="divider-line">
+
+                    <div class="grid-row"> 
+                      
+                      <p class="cart-paragraph">Gertrude Van Doiven</p>
+                      <p class="cart-paragraph">gvandoiven@gmail.com</p>
+                      <p class="cart-paragraph">1234 Gert Lane</p>
+                      <p class="cart-paragraph">Vancouver, BC VCR 123</p>
+                      <p class="cart-paragraph">Canada</p>
+
+
+                      <div class="grid-col-9of12">
+                            <h4>Billing Info</h4>
+                      </div> 
+
+                  </div>
+      
+                 </div>
+
+                 <div class="divider-line">
+
+                    <div class="grid-row"> 
+
+                      <p class="cart-paragraph">Visa</p>
+                      <p class="cart-paragraph">1234 5678 1234 XXXX</p>
+                      <p class="cart-paragraph">Expiring 11/20</p>              
+
+                   </div>
+
+                  </div>
               
               <div class="cart-container">
                 
-                  <a class="button-dark float-left" href="product_listing.html">Continue Shopping</a>
+                  <a class="button-dark float-left" href="cart_checkout.html">Back</a>
 
-                  <div class="cart-total">Cart Total: $59</div>
                   
-                <a class="button-red" href="cart_checkout.html">Check Out</a>
+                <a class="button-red" href="confirmation.html">Place Order</a>
 
               </div>
               
@@ -126,7 +157,7 @@
 
            <div class="grid-col-1of3">
               <h4 class="style3">Stay Connected</h4>
-              <input class="newsletter" type="text" placeholder="Email address :)">
+              <input class="newsletter" type="text" placeholder="Email address :)" style="width: 100%">
               <a class="button-dark" href="#">Subscribe</a>
 
           </div>

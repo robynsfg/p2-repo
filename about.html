@@ -5,44 +5,47 @@
 
     <meta charset="utf-8">
     <title>About</title>
-
-
-   <link href="css/main.css" rel="stylesheet"> 
+    <link href="css/main.css" rel="stylesheet"> 
     <link href="css/normalize.css" rel="stylesheet"> 
     <link href="css/grids.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Karla:400,700|Roboto:100,300" rel="stylesheet">
+    </head>
 
     <body>
 
        
-    <nav class="box">
 
-      <div class="box-item-logo">
-        <h3>logo goes here</h3>
-      </div>
-
-      <div class="box-item-hamburger">
-      <a href="javascript:void(0);" onclick="responsiveMenu()"><h3>☰</h3></a>
-      </div>
-      <div id="myTopnav" class="topnav">
-        <a class="box-item-nav button-nav" href="product_listing.html">Hammocks</a>
-        <a class="box-item-nav button-nav" href="explore.html">Explore</h3></a>
-        <a class="box-item-nav button-nav" href="about.html">About</a>
-        <a class="box-item-cart button-nav" href="cart.html">Cart</a>
-      </div>
-
-    </nav>
+      <nav class="box">
+          <div class="box-item-logo">
+              <a href="index.html"><img src="img/logo.png" alt="cocoon & co" class="header-logo"></a>
+          </div>
+          <div class="box-item-hamburger">
+              <a href="javascript:void(0);" onclick="responsiveMenu()"><h1>☰</h1></a>
+          </div>
+          <div id="myTopnav" class="topnav">
+              <a class="box-item-nav button-nav" href="product_listing.html">Hammocks</a>
+              <a class="box-item-nav button-nav" href="explore.html">Explore</a>
+              <a class="box-item-nav button-nav" href="about.html">About</a>
+              <a class="box-item-cart button-nav" href="cart.html">Cart</a>
+          </div>
+      </nav>
 
       <section id="product-detail">
 
           
           <div class="grid-col-6of12" style="float:left">
-            <img src="img/product_detail_placeholder.jpg" class="image-product-detail" alt="Grey box">
+            <img src="img/aboutus.jpg" class="image-product-detail" alt="First person perspective of laying in a hammock indoors">
           </div>
            
           <div class="grid-col-6of12 BLAH">
-              <h2 class="style2">About Cocoon Co.</h2>
-              <h3 class="style2">The people who go ham for hammocks</h3>
+         
+              <div class="header-background-box">
+                  <div class="header-subhead">
+                      <h3>The people who go ham for Hammocks.</h3>
+                  </div>
+                  <h2 class="style2">About Us</h2>
+              </div>
+       
           </div>
 
           <div class="grid-col-6of12" style="float:right">
@@ -81,9 +84,54 @@
 
        
     </section>
+        <footer id="footer">
+            
+            <div class="footer-container">
+            <div class="grid-col-1of3">
+              
+              <h4 class="style3">Cocoon &amp; Co</h4>
+              <ul>
+                <li>About Us</li>
+                <li>Updates</li>
+                <li>Contact Us</li>
+                <li>Blog</li>
+              </ul>
+       
+            </div>
+          
 
+           <div class="grid-col-1of3">
+              <h4 class="style3">Help</h4>
+              <ul>
+                <li>Shipping + Delivery</li>
+                <li>Returns</li>
+                <li>FAQ</li>
+              </ul>
+  
+            </div>
+
+
+           <div class="grid-col-1of3">
+              <h4 class="style3">Stay Connected</h4>
+              <input class="newsletter" type="text" placeholder="Email address :)">
+              <a class="button-dark" href="#">Subscribe</a>
+
+          </div>
+
+        </footer>
+  <script>
+  function responsiveMenu() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+          x.className += " responsive";
+          document.getElementById("myTopnav").style.display = "block";
+      } else {
+          x.className = "topnav";
+          document.getElementById("myTopnav").style.display = "none";
+      }
+  }
+  </script>
 
     </body>
-  </head>
 </html>
 

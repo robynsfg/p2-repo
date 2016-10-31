@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Cart Checkout</title>
+    <link href="css/main.css" rel="stylesheet"> 
+    <link href="css/normalize.css" rel="stylesheet"> 
+    <link href="css/grids.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,700|Roboto:100,300" rel="stylesheet">
+  </head>
+
+  <body>
+
+      <nav class="box">
+          <div class="box-item-logo">
+              <a href="index.html"><img src="img/logo.png" alt="cocoon & co" class="header-logo"></a>
+          </div>
+          <div class="box-item-hamburger">
+              <a href="javascript:void(0);" onclick="responsiveMenu()"><h1>☰</h1></a>
+          </div>
+          <div id="myTopnav" class="topnav">
+              <a class="box-item-nav button-nav" href="product_listing.html">Hammocks</a>
+              <a class="box-item-nav button-nav" href="explore.html">Explore</a>
+              <a class="box-item-nav button-nav" href="about.html">About</a>
+              <a class="box-item-cart button-nav" href="cart.html">Cart</a>
+          </div>
+      </nav>
+
+
+
+      <section class="explore-container">
+                        <h2 class="style2">Checkout</h2>
+
+          <div class="cart">
+              
+              <div class="divider-line">
+                  <div class="grid-row">
+                  
+                      <div class="grid-col-9of12">
+                            <h4>1. Shipping Info</h4>
+                      </div>                
+
+                   </div>
+                  
+              </div>
+              
+                <div class="divider-line">
+                    
+                    <div class="grid-row">
+                  
+                      <div class="grid-col-4of12">
+                             <form method="post" action="#">
+                             <label for="form-firstname">Name</label>
+                             <input class="newsletter" type="text" placeholder="First Name" style="width: 100%">
+                              </form>
+                      </div>
+
+                      <div class="grid-col-4of12">
+                             <form method="post" action="#">
+                             <label for="form-lastname">Name</label>
+
+                             <input class="newsletter" type="text" placeholder="Last Name" style="width: 100%">
+                              </form>
+                      </div>
+
+                      <div class="grid-col-8of12">
+                             <form method="post" action="#">
+                             <label for="form-email">Email Address</label>
+                             <input class="newsletter" type="text" placeholder="Email" style="width: 100%">
+                              </form>
+                      </div>
+
+                      <div class="grid-col-8of12">
+                             <form method="post" action="#">
+                             <label for="form-address">Address</label>
+                             <input class="newsletter" type="text" placeholder="Address 1" style="width: 100%">
+                              </form>
+                      </div>
+
+                      <div class="grid-col-8of12">
+                             <form method="post" action="#">
+                             <input class="newsletter" type="text" placeholder="Address 2 (Optional)" style="width: 100%">
+                              </form>
+                      </div>
+
+                      <div class="grid-col-4of12">
+                             <form method="post" action="#">
+                             <label for="form-city">City</label>
+                             <input class="newsletter" type="text" placeholder="City" style="width: 100%">
+                              </form>
+                      </div>
+
+                      <div class="grid-col-4of12">
+                             <form method="post" action="#">
+                             <label for="form-province">Province</label>
+                             <input class="newsletter" type="text" placeholder="Province" style="width: 100%">
+                              </form>
+                      </div>
+
+                      <div class="grid-col-4of12">
+                             <form method="post" action="#">
+                             <label for="form-postalcode">Postal Code</label>
+                             <input class="newsletter" type="text" placeholder="Postal Code"style="width: 100%">
+                              </form>
+                      </div>
+
+                      <div class="grid-col-4of12 dropdown">
+                             <form method="post" action="#">
+                             <label for="dropdown-country">Country</label>
+                             <button class="dropdown-select" id="dropdown-country" style="width: 100%"> Select Country &nbsp; ▾</button>
+                                <div class="dropdown-content" style="width: 100%;">
+                                   <a href="#">Australia</a>
+                                   <a href="#">Canada</a>
+                                   <a href="#">United Kingdom</a>
+                                   <a href="#">United States</a>
+                                </div>
+                              </form>
+                      </div>
+
+                   </div>
+
+
+                   <div class="grid-row">
+                  
+                      <div class="grid-col-9of12">
+                            <h4>2. Billing Info</h4>
+                      </div> 
+
+                   </div>
+
+                  </div>
+ 
+                 <div class="divider-line">
+
+                    <div class="grid-row"> 
+                      <div class="dropdown">
+                             <form method="post" action="#">
+                             <label for="dropdown-credit">Credit Card</label>
+                             <button class="dropdown-select" id="dropdown-credit" style="width: 100%"> Select Card Type &nbsp; ▾</button>
+                                <div class="dropdown-content" style="width: 100%;">
+                                   <a href="#">Mastercard</a>
+                                   <a href="#">Visa</a>
+                                </div>
+                              </form>
+                      </div>
+
+                    <div class="grid-col-8of12">
+                             <form method="post" action="#">
+                             <label for="form-credit#">Credit Card Number</label>
+                             <input class="newsletter" type="text" placeholder="Card #" style="width: 100%">
+                              </form>
+                    </div>
+
+                    <div class="grid-col-4of12">
+                             <form method="post" action="#">
+                             <label for="form-expiration">Expiration Date</label>
+                             <input class="newsletter" type="text" placeholder="MM/YY" style="width: 100%">
+                              </form>
+                    </div>
+
+                    <div class="grid-col-4of12">
+                             <form method="post" action="#">
+                             <label for="form-cvv">CVV</label>
+                             <input class="newsletter" type="text" placeholder="CVV" style="width: 100%">
+                              </form>
+                    </div>
+
+                  </div>
+           
+
+                 </div>
+              
+              <div class="cart-container">
+                
+                  <a class="button-dark float-left" href="cart.html">Back</a>
+
+                  
+                <a class="button-red" href="cart_review.html">Review Order</a>
+
+              </div>
+              
+              
+        </div>
+    </section>
+
+              <footer id="footer">
+            
+            <div class="footer-container">
+            <div class="grid-col-1of3">
+              
+              <h4 class="style3">Cocoon &amp; Co</h4>
+              <ul>
+                <li>About Us</li>
+                <li>Updates</li>
+                <li>Contact Us</li>
+                <li>Blog</li>
+              </ul>
+       
+            </div>
+          
+
+           <div class="grid-col-1of3">
+              <h4 class="style3">Help</h4>
+              <ul>
+                <li>Shipping + Delivery</li>
+                <li>Returns</li>
+                <li>FAQ</li>
+              </ul>
+  
+            </div>
+
+
+           <div class="grid-col-1of3">
+              <h4 class="style3">Stay Connected</h4>
+              <input class="newsletter" type="text" placeholder="Email address :)" style="width: 100%">
+              <a class="button-dark" href="#">Subscribe</a>
+
+          </div>
+
+        </footer>
+
+
+  <script>
+  function responsiveMenu() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+          x.className += " responsive";
+          document.getElementById("myTopnav").style.display = "block";
+      } else {
+          x.className = "topnav";
+          document.getElementById("myTopnav").style.display = "none";
+      }
+  }
+  </script>
+
+
+  </body>
+</html>
