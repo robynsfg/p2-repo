@@ -86,6 +86,12 @@ section:not([id]) {
   padding: 1rem;
 }
 
+.image-icon {
+  width: 1.4rem;
+  position: absolute;
+  float: right;
+}
+
 
 
 .product-description, .product-extra-info, .product-cart-button,
@@ -364,7 +370,7 @@ section h3.style1, section h3.style2 {
         font-size:6vw;
     }
     
-    section h3.style1, section h3.style2 {
+    section h3.style1, section h3.style2, .image-icon {
           font-size: 2vw;
     }
     
