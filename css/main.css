@@ -107,7 +107,7 @@ section:not([id]) {
   margin-top: 2em;
 }
 
-#reviews h2{
+.review-section h2{
   font-family:'Karla', sans-serif; 
   font-size: 1.2rem;
   text-transform: uppercase; 
@@ -126,18 +126,17 @@ section:not([id]) {
   line-height: 1.7em;
 }
 
-.product-description img {
-  margin-top: 1em;
+.product-extra-info img {
   width: 30%;
-  margin-right: 1rem;
+  margin: 1rem 1rem 2.5rem 0;
 }
 
-.product-description h3{
+.product-extra-info h3{
   font-family: 'Karla';
   text-transform: uppercase;
 }
 
-.product-description:hover h4{
+.product-extra-info:hover h4{
   color: #FB5A5A;
 }
 
@@ -186,8 +185,11 @@ section:not([id]) {
 
 #product-detail{
   position: relative;
-  float: left;
+  clear: left;
 }
+
+.clear { clear: left; }
+
 
 .redcolor, .bluecolor {
   display: inline-block;
@@ -278,6 +280,7 @@ textarea {
 }
 
 #more-explore{
+  clear: both;
   padding-top: 3rem;
 }
 
@@ -611,6 +614,21 @@ figure {
 
 }
 
+@media (max-width: 90em){
+
+  .2-grid-clear{
+    clear: both;
+  }
+
+}
+
+@media (min-width: 90em){
+
+  .3-grid-clear{
+    clear: both;
+  }
+}
+
 
     
 figcaption, h3.figure {
@@ -787,11 +805,7 @@ cite {
     margin: 0 0 0 2rem;
   }
 
-  .box-item-logo img{
-    width: 20%;
-    height: 20%;
-    padding-top: 0.65rem;
-  }
+
 
 
 @media (max-width: 68em) {
