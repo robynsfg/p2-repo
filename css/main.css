@@ -21,12 +21,6 @@ section:not([id]) {
     margin: 1rem 0 1rem 0;
 }
 
-@media (min-width: 68em){
-    .header-logo{
-        margin: 1rem 0 1rem 0;
-        height:4vw;
-    }
-}
 
 #hero-hammock{
   width: 100%;
@@ -286,8 +280,7 @@ textarea {
 
 .header-background-box{
     position: relative;
-        clear: left;
-
+    clear: left;
     padding: 0;
     color: black;
     width: 100%;
@@ -303,7 +296,20 @@ textarea {
     left: 0rem;
     top: 0rem;
     color: white;
-    width: 80%;
+}
+
+@media (max-width: 40em) {
+    .header-subhead{
+        padding: .5rem .5rem .5rem 2rem;
+        position: absolute;
+        margin-top: .8rem;
+        width: 80%;
+    }
+    
+    .header-background-box{
+        margin: 2rem 0 3.5rem 0;
+    }
+
 }
 
 .divider-line{
@@ -359,9 +365,7 @@ h1 {
 }
 
 section h1 {
-  font-family: 'Karla', sans-serif;
-  font-weight: 700; 
-  font-size: 2.5em;
+  font-size: 1.5rem;
   color: #333;
   text-transform: uppercase;
 }
@@ -369,8 +373,8 @@ section h1 {
 h2, section h2.style1, section h2.style2 {
   font-family: 'Karla', serif;
   font-weight: 700;
-  font-size: 3.4em;
-  line-height: 1em;
+  font-size: 3rem;
+  line-height: 2.5rem;
   margin: 0 0 1rem 0;
 }
 
@@ -382,10 +386,13 @@ section h2.style1 {
 
 
 section h2.style2 {
-  margin-top: 1rem;
-  line-height: 1.1em;
+  margin-top: .5rem;
+  font-size: 3.5rem;
+  line-height: 3rem;
   padding-left: 4rem;
 }
+
+
 
 section h3{
   font-family: 'Roboto', sans-serif;
@@ -395,7 +402,17 @@ section h3{
   margin: 0;
 }
 
-
+@media (max-width: 50em){
+    section h2.style2 {
+      font-size: 1.7rem;
+      line-height: .8rem;
+      padding-left: 1rem;
+    }
+    
+    section h3{
+      font-size: .8rem;    
+    }
+}
 
 
 section h3.style1, section h3.style2 {
@@ -436,14 +453,14 @@ section h3.style2 {
 }
 
 @media (max-width: 35em) {
-
+/*
   section h2{
     font-size: 2rem;
   } 
 
   section h3{
     font-size: .9rem;
-  } 
+  } */
 
 }
 
@@ -541,13 +558,22 @@ figure {
     padding: 1rem 2rem 1rem 2rem;
 }
 
+@media (max-width: 35em){
+    
+    .explore-background{
+        padding: 1rem 2rem 1rem .8rem; 
+    }
+    
+    .explore-background-content{
+        clear: both;
+    }
+}
+
 .product-listing-background{
     padding-right: 1rem;
 }
 
-.explore-background h3{
-    font-size: 1rem;
-}
+
 
 
 
@@ -631,7 +657,7 @@ figure {
 
 
     
-figcaption, h3.figure {
+.explore-header, figcaption, h3.figure {
 
   font-family: 'Karla', sans-serif;
   font-size: 1.2rem;
@@ -666,7 +692,7 @@ figcaption, h3.figure {
   }
 }
 
-.grid-col-12of12 figcaption, .grid-col-6of12 figcaption{
+.grid-col-12of12 .explore-header, .grid-col-6of12 .explore-header{
     position: relative;
     left:-12rem;
     width: 125%;
@@ -674,7 +700,7 @@ figcaption, h3.figure {
     padding-top: 4vw;
 }
 
-.grid-col-6of12 figcaption{
+.grid-col-6of12 .explore-header{
     left:-14rem;
      width: 150%;
     font-size: 3.2vw;
@@ -697,11 +723,8 @@ figcaption, h3.figure {
 
 @media (max-width: 68em){
    
-    .grid-col-6of12 figcaption{
-    left:-12rem;
-     width: 125%;
-    font-size: 3.8vw;
-    padding-top: 4vw;
+    .grid-col-6of12 .explore-header, .grid-col-12of12 .explore-header{
+    padding-top: 6vw;
     } 
 }
 
@@ -709,10 +732,10 @@ figcaption, h3.figure {
 
 @media (max-width: 45em) {
     
-    .grid-col-12of12 figcaption, .grid-col-6of12 figcaption{
+    .grid-col-12of12 .explore-header, .grid-col-6of12 .explore-header{
         font-size: 5vw;
         width: 140%;
-        left: -9rem;
+        left: -6rem;
     }
 }
 
@@ -802,7 +825,7 @@ cite {
 }
 
   .box-item-logo{
-    margin: 0 0 0 2rem;
+    margin: 0 0 0 1rem;
   }
 
 
@@ -822,13 +845,13 @@ cite {
     width: 100%;
   }
 
-  .button-nav {
+ .button-nav {
         text-align: center;
-        font-size: 1.5rem;
-        padding: 0.5rem 0 1rem 0;
+        font-size: .9rem;
+        padding: 0.2rem 0 .5rem 0;
         display: block;
   }
-    section h3{
+  /*   section h3{
         font-size: 1.6rem;
     }
     
@@ -837,7 +860,7 @@ cite {
     }
     .explore-listing p{
       font-size:14px;
-    }
+    }*/
 
 }
 
@@ -888,11 +911,11 @@ cite {
   display: inline-block;
   border: 2px solid white;
   margin-top: 1em;
-  padding: 1rem 2rem;
+  padding: .8rem 1.5rem;
   color: white;
   font-family: 'Karla', sans-serif;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: .8rem;
   letter-spacing: .15rem;
   text-transform: uppercase;
   text-decoration: none;
