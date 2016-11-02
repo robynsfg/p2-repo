@@ -70,6 +70,10 @@ section:not([id]) {
   width: 80%;
 }
 
+#cart-container{
+  margin-top: 2rem;
+}
+
 .photo-grid-container{
   margin: auto;
   position: relative;
@@ -107,7 +111,7 @@ section:not([id]) {
   margin-top: 2em;
 }
 
-.review-section h2{
+.review-section h2, .checkout-column h2{
   font-family:'Karla', sans-serif; 
   font-size: 1.2rem;
   text-transform: uppercase; 
@@ -298,11 +302,7 @@ textarea {
     transition: all .5s ease-out;
 }
 
-.cart, .cart-review{
-    background: white;
-    margin:2em;
-    padding: 2em;
-}
+
 
 .cart img{
     width: 6rem;
@@ -361,18 +361,27 @@ textarea {
 }
 
 .divider-line{
-    width: 80%;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
-    border-bottom: 1px #a0a0a0 solid;
     padding: 1rem 0 1rem 0;
 }
 
-.cart-container, .confirmation-container{
-    width: 80%;
+.checkout-column{
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
-    padding: 4rem 0 1rem 0;
+}
+
+.checkout-column h4{
+  margin-bottom: 2rem;
+}
+
+.cart-container, .confirmation-container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1rem 1rem 0;
     font-family: 'Karla', sans-serif;
     font-weight: 400;
     font-size: 1.5rem;
