@@ -552,10 +552,11 @@ figure, section figure {
     width: 100%;
 }
 
-figcaption {
+figcaption.photo-grid {
   font-family: 'Roboto', sans-serif;
   font-size: 0.9rem;
   font-weight: 500;
+  line-height: 1.2rem;
   color: #9B9B9B;
   text-align: center;
   padding-bottom: 1rem;
@@ -691,7 +692,7 @@ figure.explore {
 
 
     
-.explore-header, h3.figure {
+.explore-header, figcaption.product, h3.figure {
 
   font-family: 'Karla', sans-serif;
   font-size: 1.2rem;
