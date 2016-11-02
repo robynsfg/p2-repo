@@ -150,18 +150,19 @@ section:not([id]) {
 
 #footer {
   background:#EEE;
-  display: block;
-  width:100%;
-  height:20em;
+  display: inline-block;
+  width: 100%;
   margin-top: 5em;
+  position: relative;
   clear: both;
 
 }
 
 .footer-container {
   margin:auto;
-  padding-top: 3em;
-  width: 60%;
+  padding-top: 2.5em;
+  width: 70%;
+
 
 }
 
@@ -205,7 +206,7 @@ section:not([id]) {
 form {
   font-family:'Karla', sans-serif; 
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem 0.5rem 0;
   font-size: 0.85rem;
   text-transform: uppercase; 
 }
@@ -474,15 +475,16 @@ h4, section h4, section h4.style2, section h4.style3 {
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 0.3em;
+  margin-top: 2.5rem;
 }
 
-h4{
-  margin-top: 2.5rem;
+h4.style3 {
+  margin-top: 1rem;
 }
 
 
 section h4.style2 {
-font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   -webkit-transition: color 0.4s ease-out;
   transition: color 0.4s ease-out;
@@ -923,16 +925,20 @@ cite {
   transition: background-color 0.4s, color 0.4s ease-out;
 }
 
-
+.button {
+  margin-bottom: 2.5em;
+}
 
 .button-dark {
   border: 2px solid black;
   color: black;
+  margin-bottom: 3em;
 }
 
 .button-red{
   background-color: #FB5A5A;
   color: white;
+  margin-bottom: 2.5em;
 }
 
 
@@ -1004,17 +1010,17 @@ input.quantity, input.newsletter, .dropdown-select {
   border: 2px solid #333;
   background-color: #f7f7f7;
   font-family:'Karla', sans-serif;
-  font-size: 0.8em;
+  font-size: 1em;
   font-weight: 400;
   margin-bottom: .75em;
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 0.8rem 1rem 0.8rem 1rem;
   color: black;
   letter-spacing: .15rem;
 }
 
 input.quantity {
   resize: horizontal;
-  width: 4em;
+  width: 5em;
   text-align: center;
 }
 

@@ -165,11 +165,19 @@
 }
 
 
+/* Footer break point */
 
+@media(min-width: 55em) {
 
+    .grid-col-3of12 {
+    	width: 33%;
+    }
+
+}
 
 
 @media (min-width: 50em) {
+
 
     .grid-col-1of12 {
 	width: 8.333%;	
@@ -198,6 +206,7 @@
 		margin-bottom: 2rem;
 	}
 
+
 }
 
 
@@ -218,10 +227,6 @@
 
 .grid-col-2of12 {
 	width: 16.667%;	
-}
-
-.grid-col-3of12 {
-	width: 25%;	
 }
 
 .grid-col-4of12 {
