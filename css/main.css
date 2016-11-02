@@ -17,7 +17,8 @@ section:not([id]) {
 }
 
 .header-logo{
-    height: 6vw;
+    padding-top: 0.4rem;
+    height: 3rem;
     margin: 1rem 0 1rem 0;
 }
 
@@ -56,6 +57,7 @@ section:not([id]) {
     opacity: 0.7;
     }
 
+
 }
 
 #explore-main{
@@ -69,6 +71,7 @@ section:not([id]) {
 
 .photo-grid-container{
   margin: auto;
+  position: relative;
   width: 80%;
   clear:both;
 }
@@ -311,6 +314,16 @@ textarea {
         margin: 2rem 0 3.5rem 0;
     }
 
+    
+
+}
+
+@media (max-width: 50em) {
+    
+    .header-logo {
+       height: 2.5rem;
+    }  
+
 }
 
 .divider-line{
@@ -532,13 +545,32 @@ p.cart-paragraph {
     text-align: center;
 }
 
-figure {
+figure, section figure {
     display: inline;
     float: left;
     margin: 0;
     width: 100%;
 }
 
+figcaption {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #9B9B9B;
+  text-align: center;
+  padding-bottom: 1rem;
+  margin: 1rem;
+}
+
+/*
+figure.explore {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin:0;
+}
+
+*/
 
 .product-listing-background, .explore-background{
     position: relative;
@@ -659,7 +691,7 @@ figure {
 
 
     
-.explore-header, figcaption, h3.figure {
+.explore-header, h3.figure {
 
   font-family: 'Karla', sans-serif;
   font-size: 1.2rem;
