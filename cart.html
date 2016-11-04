@@ -12,92 +12,72 @@
   </head>
 
   <body>
-      <nav class="box">
-          <div class="box-item-logo">
-              <a href="index.html"><img src="img/logo.png" alt="cocoon co" class="header-logo"></a>
-          </div>
-          <div class="box-item-hamburger">
-              <a href="javascript:void(0);" onclick="responsiveMenu()"><h3>☰</h3></a>
-          </div>
-          <div id="myTopnav" class="topnav">
-              <a class="box-item-nav button-nav" href="product_listing.html">Shop</a>
-              <a class="box-item-nav button-nav" href="explore.html">Adventures</a>
-              <a class="box-item-nav button-nav" href="about.html">About</a>
-              <a class="box-item-cart button-nav" href="cart.html">Cart</a>
-          </div>
-      </nav>
+    <nav class="box">
+      <div class="box-item-logo">
+        <a href="index.html"><img src="img/logo.png" alt="cocoon co" class="header-logo"></a>
+      </div>
+      <div class="box-item-hamburger">
+        <a href="javascript:void(0);" onclick="responsiveMenu()"><h3>☰</h3></a>
+      </div>
+      <div id="myTopnav" class="topnav">
+        <a class="box-item-nav button-nav" href="product_listing.html">Shop</a>
+        <a class="box-item-nav button-nav" href="explore.html">Adventures</a>
+        <a class="box-item-nav button-nav" href="about.html">About</a>
+        <a class="box-item-cart button-nav" href="cart.html">Cart</a>
+      </div>
+    </nav>
 
-
-
-      <section class="explore-container">
-
-          <div class="cart">
-
-                                    <h2 class="style2">Cart</h2>
-
+      <section id="cart-container">
+        <h2 class="style2">Cart</h2>
+          
+            
+            <div class="checkout-column">
               
-              <div class="divider-line">
-                  <div class="grid-row">
-                  
-                      <div class="grid-col-9of12">
-                            <h4>ITEM</h4>
-                      </div>
-                      
-                       <div class="grid-col-1of12">                     
-                           <div class="center-align"><h4>PRICE</h4></div>
-                       </div>
-                     
-                        <div class="grid-col-1of12">                                          
-                            <div class="center-align"><h4>QTY</h4></div>
-                       </div>
+                <div class="grid-row">
 
-
-                        <div class="grid-col-1of12">                     
-                            <div class="right-align"><h4>REMOVE</h4></div>    
-                        </div>
-
-                   </div>
-                  
-               </div>
-              
-                <div class="divider-line">
+                    <div class="grid-col-10of12 checkout">&nbsp;</div>
                     
-                    <div class="grid-row cartstuff-container">
+                     <div class="grid-col-1of12 checkout">                     
+                        <div class="center-align"><h3>PRICE</h3></div>
+                     </div>
+                   
+                      <div class="grid-col-1of12 checkout">                                          
+                        <div class="center-align"><h3>QTY</h3></div>
+                     </div>
+
+                  </div>
+                <div class="checkout-divider">&nbsp;</div>
                   
-                      <div class="grid-col-9of12">
-                            <a href="product_detail.html"><img src="img/hammockpng.png" alt="a hammock"><h4 class="style2">STRIPED BRAZILLIAN HAMMOCK</h4></a>
-                      </div>
-                      
-                       <div class="grid-col-1of12">                     
-                           <div class="center-align"><h4 class="style2">$59</h4></div>
-                       </div>
-                     
-                        <div class="grid-col-1of12">                                          
-                            <div class="center-align"><input class="quantity" type="text" placeholder="1"></div>
-                       </div>
-
-
-                        <div class="grid-col-1of12">                     
-                            <div class="center-align"><h4 class="style2">X</h4>  </div>  
-                        </div>
-
+                <div class="grid-row cartstuff-container">
+              
+                  <div class="grid-col-10of12 checkout">
+                    <a href="product_detail.html"><img src="img/hammockpng.png" alt="a parachute hammock"><h2>PARACHUTE HAMMOCK</h2></a>
+                  </div>
+                  
+                   <div class="grid-col-1of12 checkout">                     
+                      <div class="center-align"><h2>$59</h2></div>
                    </div>
-                  
-                </div>
+                 
+                    <div class="grid-col-1of12 checkout">                                          
+                      <div class="center-align"><input class="quantity" type="text" placeholder="1"></div>
+                   </div>
+                 <div class="checkout-divider">&nbsp;</div>
+
+
+                 </div>
+
+                            
               
-              <div class="cart-container">
+                <div class="cart-total-container"><h3>Cart Total: $59</h3>
                 
-                  <a class="button-dark float-left" href="product_listing.html">Continue Shopping</a>
+              <a class="button-red" href="cart_checkout.html">Check Out</a></div>
+            </div>
+          </div>
 
-                  <div class="cart-total">Cart Total: $59</div>
-                  
-                <a class="button-red" href="cart_checkout.html">Check Out</a>
+        </section>
 
-              </div>
-              
-              
-        </div>
-    </section>
+
+
 
                <footer id="footer">
             
