@@ -530,6 +530,11 @@ img {
   clear: left;
 }
 
+#about-detail ul{
+  list-style-type: none;
+  text-align: center;
+}
+
 
 /* INPUT FIELDS */
 
@@ -1201,9 +1206,15 @@ input.quantity {
   text-align: center;
 }
 
-input.newsletter {
+input.newsletter, button.dropdown-select {
+  width: 100%;
   text-align: left;
 }
+
+iframe{
+  border: none;
+}
+
 
 input.quantity:focus, input.newsletter:focus {
   -webkit-transition: background-color 0.4s, color 0.4s ease-out;

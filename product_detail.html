@@ -99,15 +99,13 @@
                 <h2>Parachute Hammock Set Up</h2>    
                 <div class="video-container">
                     <div class="embed-container">
-                        <iframe src="https://www.youtube.com/embed/drniklxBqJ4"
-                        frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/drniklxBqJ4"></iframe>
                     </div>   
                 </div>
               </div>
             </div>
 
         </div>
-      </div>
 
     </section>
 
@@ -123,28 +121,28 @@
               <div class="grid-col-4of12">
                  <form method="post" action="#">
                  <label for="form-firstname">First Name</label>
-                 <input class="newsletter" type="text" placeholder="First Name" style="width: 100%">
+                 <input id="form-firstname" class="newsletter" type="text" placeholder="First Name">
                   </form>
               </div>
 
               <div class="grid-col-4of12">
                  <form method="post" action="#">
                  <label for="form-lastname">Last Name</label>
-                 <input class="newsletter" type="text" placeholder="Last Name" style="width: 100%">
+                 <input id="form-lastname" class="newsletter" type="text" placeholder="Last Name">
                   </form>
               </div>
 
               <div class="grid-col-8of12">
                  <form method="post" action="#">
                  <label for="form-email">Email Address</label>
-                 <input class="newsletter" type="text" placeholder="Email" style="width: 100%">
+                 <input id="form-email" class="newsletter" type="text" placeholder="Email">
                   </form>
               </div>
 
               <div class="grid-col-8of12">
                  <form method="post" action="#">
                  <label for="form-address">Purchase Verification Code</label>
-                 <input class="newsletter" type="text" placeholder="Please reference your Cocoon&Co Receipt" style="width: 100%">
+                 <input id="form-address" class="newsletter" type="text" placeholder="Please reference your Cocoon Co Receipt">
                   </form>
               </div>
 
@@ -180,12 +178,10 @@
         
        <div class="grid-row footer-container">
 
-          <div class="grid-col-3of12">
+          <div class="grid-col-3of12">   
             <h4 class="style3">Cocoon Co.</h4>
             <ul class="footer">
-              <a href="about.html">
-                <li>About Us</li>
-              </a>  
+                <li><a href="about.html">About Us</a></li>
                 <li>Updates</li>
                 <li>Contact Us</li>  
             </ul>
@@ -202,7 +198,7 @@
 
           <div class="grid-col-3of12">
             <h4 class="style3">Stay Connected</h4>
-            <input class="newsletter" type="text" placeholder="Email address :)" style="width: 100%">
+            <input class="newsletter" type="text" placeholder="Email address :)">
             <a class="button-dark" href="#">Subscribe</a>
           </div>
 
@@ -219,20 +215,18 @@
 
 
   <script>
-  function responsiveMenu() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-          x.className += " responsive";
-          document.getElementById("myTopnav").style.display = "block";
-      } else {
-          x.className = "topnav";
-          document.getElementById("myTopnav").style.display = "none";
-      }
+    function responsiveMenu() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+            document.getElementById("myTopnav").style.display = "block";
+        } else {
+            x.className = "topnav";
+            document.getElementById("myTopnav").style.display = "none";
+        }
   }
   </script>
-   	</body>
 
 
-  </head>
+  </body>
 </html>
-
