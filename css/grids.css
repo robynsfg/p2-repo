@@ -61,6 +61,10 @@
 	.grid-col-10of12 {
 		width: 83.333%;
 	}
+
+	.grid-col-3of12.checkout {
+    	width: 50%;
+    }
    
 }
 
@@ -97,6 +101,10 @@
 
 	.grid-col-3of12 {
     	width: 33.333%;
+    }
+
+    .grid-col-3of12.checkout {
+    	width: 25%;
     }
 
     .grid-col-4of12 {

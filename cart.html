@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Style Guide</title>
+    <title>Cart</title>
     <link href="css/main.css" rel="stylesheet"> 
     <link href="css/normalize.css" rel="stylesheet"> 
     <link href="css/grids.css" rel="stylesheet">
@@ -12,6 +12,7 @@
   </head>
 
   <body>
+
     <nav class="box">
       <div class="box-item-logo">
         <a href="index.html"><img src="img/logo.png" alt="cocoon co" class="header-logo"></a>
@@ -27,44 +28,22 @@
       </div>
     </nav>
 
-      <section id="cart-container">
-        <h2 class="style2">Cart</h2>
-          
-            
-            <div class="checkout-column">
-              
-                <div class="grid-row">
+    <section id="cart-container">
+    <h2 class="style2">Cart</h2>
+      
+      <div class="checkout-column">
 
-                    <div class="grid-col-10of12 checkout">&nbsp;</div>
-                    
-                     <div class="grid-col-1of12 checkout">                     
-                        <div class="center-align"><h3>PRICE</h3></div>
-                     </div>
-                   
-                      <div class="grid-col-1of12 checkout">                                          
-                        <div class="center-align"><h3>QTY</h3></div>
-                     </div>
+        <div class="grid-row">
+          <div class="grid-col-10of12 checkout">&nbsp;</div>
+          <div class="grid-col-1of12 checkout"><h3>PRICE</h3></div>              
+          <div class="grid-col-1of12 checkout"><h3>QTY</h3></div>
+        </div>
 
-                  </div>
-                <div class="checkout-divider">&nbsp;</div>
-                  
-                <div class="grid-row cartstuff-container">
-              
-                  <div class="grid-col-10of12 checkout">
-                    <a href="product_detail.html"><img src="img/hammockpng.png" alt="a parachute hammock"><h2>PARACHUTE HAMMOCK</h2></a>
-                  </div>
-                  
-                   <div class="grid-col-1of12 checkout">                     
-                      <div class="center-align"><h2>$59</h2></div>
-                   </div>
-                 
-                    <div class="grid-col-1of12 checkout">                                          
-                      <div class="center-align"><input class="quantity" type="text" placeholder="1"></div>
-                   </div>
-                 <div class="checkout-divider">&nbsp;</div>
-
-
-                 </div>
+        <div class="checkout-divider">&nbsp;</div>
+        <div class="grid-row cartstuff-container">
+          <div class="grid-col-10of12 checkout">
+            <a href="product_detail.html" class="cart-image"><img src="img/hammockpng.png" alt="a parachute hammock"><h2>PARACHUTE HAMMOCK</h2></a>
+          </div>
 
                             
               
@@ -138,9 +117,9 @@
           x.className = "topnav";
           document.getElementById("myTopnav").style.display = "none";
       }
-  }
-  </script>
-
-
+   }
+   </script>
   </body>
 </html>
+
+

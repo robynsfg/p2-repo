@@ -13,121 +13,60 @@
 
   <body>
 
-      <nav class="box">
-          <div class="box-item-logo">
-              <a href="index.html"><img src="img/logo.png" alt="cocoon co" class="header-logo"></a>
-          </div>
-          <div class="box-item-hamburger">
-              <a href="javascript:void(0);" onclick="responsiveMenu()"><h3>☰</h3></a>
-          </div>
-          <div id="myTopnav" class="topnav">
-              <a class="box-item-nav button-nav" href="product_listing.html">Shop</a>
-              <a class="box-item-nav button-nav" href="explore.html">Adventures</a>
-              <a class="box-item-nav button-nav" href="about.html">About</a>
-              <a class="box-item-cart button-nav" href="cart.html">Cart</a>
-          </div>
-      </nav>
+    <nav class="box">
+      <div class="box-item-logo">
+        <a href="index.html"><img src="img/logo.png" alt="cocoon co" class="header-logo"></a>
+      </div>
+      <div class="box-item-hamburger">
+        <a href="javascript:void(0);" onclick="responsiveMenu()"><h3>☰</h3></a>
+      </div>
+      <div id="myTopnav" class="topnav">
+        <a class="box-item-nav button-nav" href="product_listing.html">Shop</a>
+        <a class="box-item-nav button-nav" href="explore.html">Adventures</a>
+        <a class="box-item-nav button-nav" href="about.html">About</a>
+        <a class="box-item-cart button-nav" href="cart.html">Cart</a>
+      </div>
+    </nav>
 
+    <section id="cart-container">
+      <h2 class="style2">Review Order</h2>
+      <div class="checkout-column">
 
-
-      <section class="explore-container">
-                        <h2 class="style2">Review Order</h2>
-
-          <div class="cart-review">
-              
-              <div class="divider-line">
-                  <div class="grid-row">
-                  
-                      <div class="grid-col-9of12">
-                            <h4>Order Overview</h4>
-                      </div>                
-
-                   </div>
-                  
-              </div>
-              
-                <div class="divider-line">
-                    
-                     <div class="grid-row cartstuff-container">
-                  
-                      <div class="grid-col-6of12">
-                            <a href="product_detail.html"><img src="img/hammockpng.png" alt="a hammock"></a>
-                      </div>
-                      
-                      <div class="grid-col-6of12">
-                            <h4>Striped Brazilian Hammock</h4>
-                      </div>
-
-                      <div class="grid-col-6of12">
-                            <h4 class="style2">Quantity: 1</h4>
-                      </div>
-
-                      <div class="grid-col-6of12">
-                            <h4 class="style2">$59</h4>
-                      </div>
-
-                      <div class="grid-col-6of12">
-                            <h4>Total Cost: $59</h4>
-                      </div>
-                      
-                     
-
-                   </div>
-
-
-                   <div class="grid-row">
-                  
-                      <div class="grid-col-9of12">
-                            <h4>Shipping Info</h4>
-                      </div> 
-
-                   </div>
-
-                  </div>
- 
-                 <div class="divider-line">
-
-                    <div class="grid-row"> 
-                      
-                      <p class="cart-paragraph">Gertrude Van Doiven</p>
-                      <p class="cart-paragraph">gvandoiven@gmail.com</p>
-                      <p class="cart-paragraph">1234 Gert Lane</p>
-                      <p class="cart-paragraph">Vancouver, BC VCR 123</p>
-                      <p class="cart-paragraph">Canada</p>
-
-
-                      <div class="grid-col-9of12">
-                            <h4>Billing Info</h4>
-                      </div> 
-
-                  </div>
+        <div class="checkout-divider">&nbsp;</div> 
+        
+        <div class="grid-row cartstuff-container">
       
-                 </div>
+          <div class="grid-col-1of2">
+            <div class="grid-col-12of12"><h2>Shopping Cart</h2></div> 
+            <a href="product_detail.html" class="cart-review"><img src="img/hammockpng.png" alt="a hammock"></a>
+            <h4>Parachute Hammock</h4>
+            <p class="cart-paragraph">Quantity: 1</p>
+            <p class="cart-paragraph">$59</p>
+            <h2>Total Cost: 59$</h2>
+          </div>       
+          <div class="grid-col-3of12 checkout">
+            <div class="grid-col-12of12"><h2>Shipping Info</h2></div> 
+            <p class="cart-paragraph">Gertrude Van Doiven</p>
+            <p class="cart-paragraph">gvandoiven@gmail.com</p>
+            <p class="cart-paragraph">1234 Gert Lane</p>
+            <p class="cart-paragraph">Vancouver, BC VCR 123</p>
+            <p class="cart-paragraph">Canada</p>
+          </div>
 
-                 <div class="divider-line">
+          <div class="grid-col-3of12 checkout">
+            <div class="grid-col-12of12"><h2>Billing Info</h2></div> 
+            <p class="cart-paragraph">Visa</p>
+            <p class="cart-paragraph">1234 5678 1234 XXXX</p>
+            <p class="cart-paragraph">Expiring 11/20</p> 
+          </div> 
 
-                    <div class="grid-row"> 
-
-                      <p class="cart-paragraph">Visa</p>
-                      <p class="cart-paragraph">1234 5678 1234 XXXX</p>
-                      <p class="cart-paragraph">Expiring 11/20</p>              
-
-                   </div>
-
-                  </div>
-              
-              <div class="cart-container">
-                
-                  <a class="button-dark float-left" href="cart_checkout.html">Back</a>
-
-                  
-                <a class="button-red" href="confirmation.html">Place Order</a>
-
-              </div>
-              
-              
         </div>
-    </section>
+        <div class="cart-container">
+          <a class="button-dark float-left" href="cart_checkout.html">Back</a>
+          <a class="button-red" href="confirmation.html">Place Order</a>
+        </div>
+      </div>
+   </section>
 
         <footer id="footer">
             
@@ -189,9 +128,9 @@
           x.className = "topnav";
           document.getElementById("myTopnav").style.display = "none";
       }
-  }
-  </script>
-
-
+   }
+   </script>
   </body>
 </html>
+
+

@@ -13,54 +13,30 @@
 
   <body>
 
-      <nav class="box">
-          <div class="box-item-logo">
-              <a href="index.html"><img src="img/logo.png" alt="cocoon co" class="header-logo"></a>
-          </div>
-          <div class="box-item-hamburger">
-              <a href="javascript:void(0);" onclick="responsiveMenu()"><h3>☰</h3></a>
-          </div>
-          <div id="myTopnav" class="topnav">
-              <a class="box-item-nav button-nav" href="product_listing.html">Shop</a>
-              <a class="box-item-nav button-nav" href="explore.html">Adventures</a>
-              <a class="box-item-nav button-nav" href="about.html">About</a>
-              <a class="box-item-cart button-nav" href="cart.html">Cart</a>
-          </div>
-      </nav>
+    <nav class="box">
+      <div class="box-item-logo">
+        <a href="index.html"><img src="img/logo.png" alt="cocoon co" class="header-logo"></a>
+      </div>
+      <div class="box-item-hamburger">
+        <a href="javascript:void(0);" onclick="responsiveMenu()"><h3>☰</h3></a>
+      </div>
+      <div id="myTopnav" class="topnav">
+        <a class="box-item-nav button-nav" href="product_listing.html">Shop</a>
+        <a class="box-item-nav button-nav" href="explore.html">Adventures</a>
+        <a class="box-item-nav button-nav" href="about.html">About</a>
+        <a class="box-item-cart button-nav" href="cart.html">Cart</a>
+      </div>
+    </nav>
 
-
-
-      <section class="explore-container">
-                        <h2 class="style2">Thank You!</h2>
-
-          <div class="cart-review">
-              
-              <div class="divider-line">
-                  <div class="grid-row">
-                  
-                      <div class="grid-col-9of12" style="float:center">
-                            <h4>Thank you for your purchase.</h4>
-
-                      </div>                
-
-                   </div>
-                  
-              </div>
-              
-                <div class="divider-line">
-                   <p>An email has been sent with your receipt.</p>
-                </div>
- 
-                    
-              
-              <div class="confirmation-container">
-                
-                  <a class="button-dark" href="product_listing.html">Continue Shopping</a>
-
-              </div>
-            </div>
-              
-        </div>
+    <section id="cart-container">
+      <h2 class="style2">Thank You!</h2>
+      <div class="checkout-column">
+        <h2>Order Confirmation Number: 301867493</h2>
+        <p class="cart-paragraph">You will recieve an order confirmation email with details of your order and a link to track its progress.</p>
+      </div>  
+      <div class="confirmation-container">
+        <a class="button-dark" href="product_listing.html">Continue Shopping</a>
+      </div>     
     </section>
 
          <footer id="footer">
@@ -123,9 +99,9 @@
           x.className = "topnav";
           document.getElementById("myTopnav").style.display = "none";
       }
-  }
-  </script>
-
-
+   }
+   </script>
   </body>
 </html>
+
+
