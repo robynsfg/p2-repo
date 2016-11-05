@@ -1273,8 +1273,8 @@ input.quantity {
   text-align: center;
 }
 
-input.newsletter {
-
+input.newsletter, button.dropdown-select {
+  width: 100%;
   text-align: left;
 }
 
