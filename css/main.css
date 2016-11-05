@@ -134,6 +134,11 @@ section:not([id]) {
   text-transform: uppercase; 
 }
 
+.grid-col-1of12.checkout{
+  text-align: center;
+}
+
+
 
 @media (max-width: 35em){
     .checkout-column h2{

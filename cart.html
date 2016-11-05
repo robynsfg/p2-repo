@@ -12,6 +12,7 @@
   </head>
 
   <body>
+
     <nav class="box">
       <div class="box-item-logo">
         <a href="index.html"><img src="img/logo.png" alt="cocoon co" class="header-logo"></a>
@@ -27,97 +28,65 @@
       </div>
     </nav>
 
-      <section id="cart-container">
-        <h2 class="style2">Cart</h2>
-          
-            
-            <div class="checkout-column">
-              
-                <div class="grid-row">
+    <section id="cart-container">
+    <h2 class="style2">Cart</h2>
+      
+      <div class="checkout-column">
 
-                    <div class="grid-col-10of12 checkout">&nbsp;</div>
-                    
-                     <div class="grid-col-1of12 checkout">                     
-                        <div class="center-align"><h3>PRICE</h3></div>
-                     </div>
-                   
-                      <div class="grid-col-1of12 checkout">                                          
-                        <div class="center-align"><h3>QTY</h3></div>
-                     </div>
+        <div class="grid-row">
+          <div class="grid-col-10of12 checkout">&nbsp;</div>
+          <div class="grid-col-1of12 checkout"><h3>PRICE</h3></div>              
+          <div class="grid-col-1of12 checkout"><h3>QTY</h3></div>
+        </div>
 
-                  </div>
-                <div class="checkout-divider">&nbsp;</div>
-                  
-                <div class="grid-row cartstuff-container">
-              
-                  <div class="grid-col-10of12 checkout">
-                    <a href="product_detail.html" class="cart-image"><img src="img/hammockpng.png" alt="a parachute hammock"><h2>PARACHUTE HAMMOCK</h2></a>
-                  </div>
-                  
-                   <div class="grid-col-1of12 checkout">                     
-                      <div class="center-align"><h2>$59</h2></div>
-                   </div>
-                 
-                    <div class="grid-col-1of12 checkout">                                          
-                      <div class="center-align"><input class="quantity" type="text" placeholder="1"></div>
-                   </div>
-                 <div class="checkout-divider">&nbsp;</div>
-
-
-                 </div>
-
-                            
-              
-                <div class="cart-total-container"><h3>Cart Total: $59</h3>
-                
-                <a class="button-red" href="cart_checkout.html">Check Out</a></div>
+        <div class="checkout-divider">&nbsp;</div>
+        <div class="grid-row cartstuff-container">
+          <div class="grid-col-10of12 checkout">
+            <a href="product_detail.html" class="cart-image"><img src="img/hammockpng.png" alt="a parachute hammock"><h2>PARACHUTE HAMMOCK</h2></a>
           </div>
+          <div class="grid-col-1of12 checkout"><h2>$59</h2></div>
+          <div class="grid-col-1of12 checkout"><input class="quantity" type="text" placeholder="1"></div>
+          <div class="checkout-divider">&nbsp;</div>
+        </div>          
+        <div class="cart-total-container">
+          <h3>Cart Total: $59</h3>
+          <a class="button-red" href="cart_checkout.html">Check Out</a>
+        </div>
 
-        </section>
-
-
-
-
-               <footer id="footer">
-            
-           <div class="grid-row footer-container">
-
-            <div class="grid-col-3of12">
-              
-              <h4 class="style3">Cocoon Co.</h4>
-              <ul class="footer">
-                <li>About Us</li>
-                <li>Events</li>
-                <li>Contact Us</li>
-              </ul>
+       </div>
        
-            </div>
-          
+      </section>
 
-           <div class="grid-col-3of12">
-              <h4 class="style3">Help</h4>
-              <ul class="footer">
-                <li>Shipping + Delivery</li>
-                <li>Returns</li>
-                <li>FAQ</li>
-              </ul>
-  
-            </div>
+   <footer id="footer">
+     <div class="grid-row footer-container">
+       
+       <div class="grid-col-3of12">
+          <h4 class="style3">Cocoon Co.</h4>
+          <ul class="footer">
+            <li>About Us</li>
+            <li>Events</li>
+            <li>Contact Us</li>
+          </ul>
+      </div>
+     <div class="grid-col-3of12">
+        <h4 class="style3">Help</h4>
+        <ul class="footer">
+          <li>Shipping + Delivery</li>
+          <li>Returns</li>
+          <li>FAQ</li>
+        </ul>
+      </div>
+     <div class="grid-col-3of12">
+        <h4 class="style3">Stay Connected</h4>
+        <input class="newsletter" type="text" placeholder="Email address :)" style="width: 100%">
+        <a class="button-dark" href="#">Subscribe</a>
+      </div>
 
-
-           <div class="grid-col-3of12">
-              <h4 class="style3">Stay Connected</h4>
-              <input class="newsletter" type="text" placeholder="Email address :)" style="width: 100%">
-              <a class="button-dark" href="#">Subscribe</a>
-
-
-          </div>
-          </div>
-
-        </footer>
-
-  <script>
-  function responsiveMenu() {
+    </div>
+  </footer>
+      
+   <script>
+   function responsiveMenu() {
       var x = document.getElementById("myTopnav");
       if (x.className === "topnav") {
           x.className += " responsive";
@@ -126,9 +95,9 @@
           x.className = "topnav";
           document.getElementById("myTopnav").style.display = "none";
       }
-  }
-  </script>
-
-
+   }
+   </script>
   </body>
 </html>
+
+

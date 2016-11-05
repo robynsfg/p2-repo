@@ -14,22 +14,22 @@
 	<link href="https://fonts.googleapis.com/css?family=Karla:400,700|Roboto:100,300" rel="stylesheet">
   </head>
 
-    <body>
+  <body>
 
-      <nav class="box">
-          <div class="box-item-logo">
-              <a href="index.html"><img src="img/logo.png" alt="cocoon co" class="header-logo"></a>
-          </div>
-          <div class="box-item-hamburger">
-              <a href="javascript:void(0);" onclick="responsiveMenu()"><h3>☰</h3></a>
-          </div>
-          <div id="myTopnav" class="topnav">
-              <a class="box-item-nav button-nav" href="product_listing.html">Shop</a>
-              <a class="box-item-nav button-nav" href="explore.html">Adventures</a>
-              <a class="box-item-nav button-nav" href="about.html">About</a>
-              <a class="box-item-cart button-nav" href="cart.html">Cart</a>
-          </div>
-      </nav>
+    <nav class="box">
+      <div class="box-item-logo">
+        <a href="index.html"><img src="img/logo.png" alt="cocoon co" class="header-logo"></a>
+      </div>
+      <div class="box-item-hamburger">
+        <a href="javascript:void(0);" onclick="responsiveMenu()"><h3>☰</h3></a>
+      </div>
+      <div id="myTopnav" class="topnav">
+        <a class="box-item-nav button-nav" href="product_listing.html">Shop</a>
+        <a class="box-item-nav button-nav" href="explore.html">Adventures</a>
+        <a class="box-item-nav button-nav" href="about.html">About</a>
+        <a class="box-item-cart button-nav" href="cart.html">Cart</a>
+      </div>
+    </nav>
 
     
     <section id="product-detail">
@@ -128,46 +128,36 @@
            </div>
     </section>
 
-         <footer id="footer">
-            
-           <div class="grid-row footer-container">
-
-            <div class="grid-col-3of12">
-              
-              <h4 class="style3">Cocoon Co.</h4>
-              <ul class="footer">
-                <li>About Us</li>
-                <li>Events</li>
-                <li>Contact Us</li>
-              </ul>
+   <footer id="footer">
+     <div class="grid-row footer-container">
        
-            </div>
-          
+       <div class="grid-col-3of12">
+          <h4 class="style3">Cocoon Co.</h4>
+          <ul class="footer">
+            <li>About Us</li>
+            <li>Events</li>
+            <li>Contact Us</li>
+          </ul>
+      </div>
+     <div class="grid-col-3of12">
+        <h4 class="style3">Help</h4>
+        <ul class="footer">
+          <li>Shipping + Delivery</li>
+          <li>Returns</li>
+          <li>FAQ</li>
+        </ul>
+      </div>
+     <div class="grid-col-3of12">
+        <h4 class="style3">Stay Connected</h4>
+        <input class="newsletter" type="text" placeholder="Email address :)" style="width: 100%">
+        <a class="button-dark" href="#">Subscribe</a>
+      </div>
 
-           <div class="grid-col-3of12">
-              <h4 class="style3">Help</h4>
-              <ul class="footer">
-                <li>Shipping + Delivery</li>
-                <li>Returns</li>
-                <li>FAQ</li>
-              </ul>
-  
-            </div>
-
-
-           <div class="grid-col-3of12">
-              <h4 class="style3">Stay Connected</h4>
-              <input class="newsletter" type="text" placeholder="Email address :)" style="width: 100%">
-              <a class="button-dark" href="#">Subscribe</a>
-
-
-          </div>
-          </div>
-
-        </footer>
-
-  <script>
-  function responsiveMenu() {
+    </div>
+  </footer>
+      
+   <script>
+   function responsiveMenu() {
       var x = document.getElementById("myTopnav");
       if (x.className === "topnav") {
           x.className += " responsive";
@@ -176,12 +166,10 @@
           x.className = "topnav";
           document.getElementById("myTopnav").style.display = "none";
       }
-  }
-  </script>
-    <script src="js/lightbox-plus-jquery.min.js"></script>
-
-   	</body>
-
-
+   }
+   </script>
+  </body>
 </html>
+
+
 

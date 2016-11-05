@@ -2,157 +2,122 @@
 <html>
 
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adventures</title>
-
     <link href="css/main.css" rel="stylesheet"> 
     <link href="css/normalize.css" rel="stylesheet"> 
     <link href="css/grids.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Karla:400,700|Roboto:100,300" rel="stylesheet">
-
-
-
-
+	  <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Roboto:100,300" rel="stylesheet">
   </head>
 
   <body>
+    <nav class="box">
+      <div class="box-item-logo">
+        <a href="index.html"><img src="img/logo.png" alt="cocoon co" class="header-logo"></a>
+      </div>
+      <div class="box-item-hamburger">
+        <a href="javascript:void(0);" onclick="responsiveMenu()"><h3>☰</h3></a>
+      </div>
+      <div id="myTopnav" class="topnav">
+        <a class="box-item-nav button-nav" href="product_listing.html">Shop</a>
+        <a class="box-item-nav button-nav" href="explore.html">Adventures</a>
+        <a class="box-item-nav button-nav" href="about.html">About</a>
+        <a class="box-item-cart button-nav" href="cart.html">Cart</a>
+      </div>
+    </nav>
 
-      <nav class="box">
-          <div class="box-item-logo">
-              <a href="index.html"><img src="img/logo.png" alt="cocoon co" class="header-logo"></a>
-          </div>
-          <div class="box-item-hamburger">
-              <a href="javascript:void(0);" onclick="responsiveMenu()"><h3>☰</h3></a>
-          </div>
-          <div id="myTopnav" class="topnav">
-              <a class="box-item-nav button-nav" href="product_listing.html">Shop</a>
-              <a class="box-item-nav button-nav" href="explore.html">Adventures</a>
-              <a class="box-item-nav button-nav" href="about.html">About</a>
-              <a class="box-item-cart button-nav" href="cart.html">Cart</a>
-          </div>
-      </nav>
-
-
-   <section id="explore-main">
-
-          <div class="header-background-box">
-              <div class="header-subhead">
-                  <h3>Explore journeys to find your dream trip, and hammock.</h3>
-              </div>
-              <h2 class="style2">Featured Adventures</h2>
-          </div>
-       
+    <section id="explore-main">
+      <div class="header-background-box">
+        <div class="header-subhead"><h3>Explore journeys to find your dream trip, and hammock.</h3></div>
+        <h2 class="style2">Featured Adventures</h2>
+      </div>
        
       <div class="explore-container">
-          
-            
-
-          <div class="grid-row">
-
-              <div class="grid-col-12of12">
-
-                  <div class="explore-listing">
-                    <a href="explore_photo.html">          
-                      <figure>
-                            <div class="explore-listing-hover"> <img src="img/explore-1.jpg" alt="A traveller standing within some mountains">
-                              <div class="explore-header">Washington Trek</div>
-                                 <div class="explore-background">
-                                     <div class="explore-background-content">
-                                        <h3>Brad took a parachute hammock on his month-long trek across Washington state.</h3>
-                                      </div>
-                                 </div>
-                            </div>
-                        </figure>
-                      </a>
-                  </div>
-
-              </div>
-
-              <div class="grid-col-6of12">
-
-                  <div class="explore-listing">
-                    <a href="explore_photo.html">
-                      <figure>
-                          <div class="explore-listing-hover"> <img src="img/explore-2.jpg" alt="A girl dancing in the ocean">
-                            <div class="explore-header">Party in Cancun</div>
-                            <div class="explore-background">
-                                <div class="explore-background-content">    
-                                    <h3>Stephanie's girls trip to Cancun wasn't complete without a hammock.</h3>
-                                </div>
-                            </div>
-                         </div>
-                      </figure>
-                      </a>
-                  </div>
-
-              </div>
-
-             <div class="grid-col-6of12">
-                <div class="explore-listing">
-                    <a href="explore_photo.html">
-                      <figure>
-                          <div class="explore-listing-hover"> <img src="img/explore-3.jpg" alt="A man on a hammock on a boat">
-                            <div class="explore-header">Vietnam Boats</div>
-                             <div class="explore-background">
-                                <div class="explore-background-content"> 
-                                 <h3>Josh felt so at home in Vietnam, he was setting up his hammock on boat tours!</h3>
-                                </div>
-                              </div>
-                            </div>
-                      </figure>
-                    </a>
-                </div>
-              </div>
-              
+        <div class="grid-row">
+          <div class="grid-col-12of12">
+            <div class="explore-listing">
+              <a href="explore_photo.html">          
+                <figure>
+                    <div class="explore-listing-hover"> <img src="img/explore-1.jpg" alt="A traveller standing within some mountains">
+                      <div class="explore-header">Washington Trek</div>
+                       <div class="explore-background">
+                         <div class="explore-background-content">
+                            <h3>Brad took a parachute hammock on his month-long trek across Washington state.</h3>
+                          </div>
+                       </div>
+                    </div>
+                  </figure>
+                </a>
+            </div>
           </div>
-          
-      </div>
 
+          <div class="grid-col-6of12">
+            <div class="explore-listing">
+              <a href="explore_photo.html">
+                <figure>
+                  <div class="explore-listing-hover"> <img src="img/explore-2.jpg" alt="A girl dancing in the ocean">
+                    <div class="explore-header">Party in Cancun</div>
+                    <div class="explore-background">
+                      <div class="explore-background-content">    
+                        <h3>Stephanie's girls trip to Cancun wasn't complete without a hammock.</h3>
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+                </a>
+            </div>
+          </div>
+           <div class="grid-col-6of12">
+              <div class="explore-listing">
+                <a href="explore_photo.html">
+                  <figure>
+                    <div class="explore-listing-hover"> <img src="img/explore-3.jpg" alt="A man on a hammock on a boat">
+                      <div class="explore-header">Vietnam Boats</div>
+                         <div class="explore-background">
+                           <div class="explore-background-content"> 
+                             <h3>Josh felt so at home in Vietnam, he was setting up his hammock on boat tours!</h3>
+                           </div>
+                        </div>
+                    </div>
+                 </figure>
+              </a>
+            </div>
+          </div>
+        </div>  
+      </div>
     </section>
 
-         <footer id="footer">
-            
-           <div class="grid-row footer-container">
-
-            <div class="grid-col-3of12">
-              
-              <h4 class="style3">Cocoon Co.</h4>
-              <ul class="footer">
-                <li>About Us</li>
-                <li>Events</li>
-                <li>Contact Us</li>
-              </ul>
+   <footer id="footer">
+     <div class="grid-row footer-container">
        
-            </div>
-          
+       <div class="grid-col-3of12">
+          <h4 class="style3">Cocoon Co.</h4>
+          <ul class="footer">
+            <li>About Us</li>
+            <li>Events</li>
+            <li>Contact Us</li>
+          </ul>
+      </div>
+     <div class="grid-col-3of12">
+        <h4 class="style3">Help</h4>
+        <ul class="footer">
+          <li>Shipping + Delivery</li>
+          <li>Returns</li>
+          <li>FAQ</li>
+        </ul>
+      </div>
+     <div class="grid-col-3of12">
+        <h4 class="style3">Stay Connected</h4>
+        <input class="newsletter" type="text" placeholder="Email address :)" style="width: 100%">
+        <a class="button-dark" href="#">Subscribe</a>
+      </div>
 
-           <div class="grid-col-3of12">
-              <h4 class="style3">Help</h4>
-              <ul class="footer">
-                <li>Shipping + Delivery</li>
-                <li>Returns</li>
-                <li>FAQ</li>
-              </ul>
-  
-            </div>
-
-
-           <div class="grid-col-3of12">
-              <h4 class="style3">Stay Connected</h4>
-              <input class="newsletter" type="text" placeholder="Email address :)" style="width: 100%">
-              <a class="button-dark" href="#">Subscribe</a>
-
-
-          </div>
-          </div>
-
-        </footer>
-
-
-  <script>
-  function responsiveMenu() {
+    </div>
+  </footer>
+      
+   <script>
+   function responsiveMenu() {
       var x = document.getElementById("myTopnav");
       if (x.className === "topnav") {
           x.className += " responsive";
@@ -161,9 +126,9 @@
           x.className = "topnav";
           document.getElementById("myTopnav").style.display = "none";
       }
-  }
-  </script>
-
-
+   }
+   </script>
   </body>
 </html>
+
+
