@@ -540,7 +540,7 @@ section h2.style2 {
 }
 
 .cartstuff-container h4{
-  margin:0;
+  margin: 0 0 .5rem 0;
 }
 
 
@@ -675,7 +675,8 @@ section p.style2{
 }
 
 p.cart-paragraph {
-  line-height: 0.75em;
+  margin: 0;
+  padding: 0;
 }
 
 
