@@ -1278,6 +1278,10 @@ input.newsletter, button.dropdown-select {
   text-align: left;
 }
 
+iframe{
+  border: none;
+}
+
 
 input.quantity:focus, input.newsletter:focus {
   -webkit-transition: background-color 0.4s, color 0.4s ease-out;
