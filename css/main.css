@@ -19,15 +19,12 @@ a{
 h1 {
   font-family: 'Karla', sans-serif;
   font-weight: 700;
-}
-
-section h1 {
   font-size: 1.5rem;
   color: #333;
   text-transform: uppercase;
 }
 
-h2, section h2.style1, section h2.style2 {
+h2, section h2.white, section h2.style2 {
   font-family: 'Karla', serif;
   font-weight: 700;
   font-size: 3rem;
@@ -35,15 +32,13 @@ h2, section h2.style1, section h2.style2 {
   margin: 0 0 1rem 0;
 }
 
-
 @media (max-width: 35em){
-    section h2.style1 {
+    section h2.white {
       line-height: 2rem;
   }
-
 }
 
-section h2.style1 {
+section h2.white {
   color: white;
   padding: 0;
 }
@@ -82,7 +77,6 @@ section h2.style2 {
     margin: 0 0 0 1rem;
 }
 
-
 section h3{
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -103,7 +97,7 @@ section h3{
     }
 }
 
-section h3.style1, section h3.style2 {
+section h3.white, section h3.style2 {
   font-family: 'Roboto', sans-serif;
   font-size: 1.2rem;
   font-weight: 300;
@@ -112,7 +106,7 @@ section h3.style1, section h3.style2 {
   margin: .5rem 0 0.5em 0;
 }
 
-section h3.style1 {
+section h3.white {
   color: white;
 }
 
@@ -133,18 +127,18 @@ section h3.style2 {
 
 @media (max-width: 70em) {
     
-    section h2.style1{
+    section h2.white{
         font-size:6vw;
     }
     
-    section h3.style1, section h3.style2 {
+    section h3.white, section h3.style2 {
       font-size: 2vw;
     }
       
 }
 
 @media (max-width: 40em) {
-    section h3.style1, section h3.style2 {
+    section h3.white, section h3.style2 {
           font-size: 3vw;
     }
 }
