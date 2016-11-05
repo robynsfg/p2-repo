@@ -262,6 +262,10 @@ section:not([id]) {
   clear: left;
 }
 
+#about-detail ul{
+  list-style-type: none;
+  text-align: center;
+}
 
 
 .redcolor, .bluecolor {
@@ -339,7 +343,7 @@ textarea {
 
 
 
-#cart-container img{
+.cart-image img{
     width: 6rem;
 }
 
@@ -351,7 +355,8 @@ textarea {
 }
 
 .cart-review img {
-  width: 16rem;
+  width:13rem;
+  padding: 0 1rem 0 1rem;
 }
 
 #more-explore{
@@ -532,6 +537,10 @@ section h2.style2 {
   font-size: 2rem;
   padding-top: 0;
   margin-top: 0;
+}
+
+.cartstuff-container h4{
+  margin:0;
 }
 
 
