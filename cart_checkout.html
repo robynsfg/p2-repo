@@ -109,124 +109,79 @@
 
 
 
-                      </div>
-
-                   </div>
-
-
-
-                      <div class="grid-col-1of2">
-                  
-                        <div class="checkout-column">
-
-                          <div class="grid-col-12of12">
-                                <h2>2. Billing Info</h2>
-                          </div> 
-
-
-
-                        <div class="dropdown clear">
-                               <form method="post" action="#">
-                               <label for="dropdown-credit">Credit Card</label>
-                               <button class="dropdown-select" id="dropdown-credit" style="width: 100%"> Select Card Type &nbsp; ▾</button>
-                                  <div class="dropdown-content" style="width: 100%;">
-                                     <a href="#">Mastercard</a>
-                                     <a href="#">Visa</a>
-                                  </div>
-                                </form>
-                        </div>
-
-                      <div class="grid-col-8of12">
-                               <form method="post" action="#">
-                               <label for="form-credit#">Credit Card Number</label>
-                               <input class="newsletter" type="text" placeholder="Card #" style="width: 100%">
-                                </form>
-                      </div>
-
-                      <div class="grid-col-4of12">
-                               <form method="post" action="#">
-                               <label for="form-expiration">Expiration Date</label>
-                               <input class="newsletter" type="text" placeholder="MM/YY" style="width: 100%">
-                                </form>
-                      </div>
-
-                      <div class="grid-col-4of12">
-                               <form method="post" action="#">
-                               <label for="form-cvv">CVV</label>
-                               <input class="newsletter" type="text" placeholder="CVV" style="width: 100%">
-                                </form>
-                      </div>
-
-                    </div>
-           
-              <div class="cart-container">
-                
-                  <a class="button-dark float-left" href="cart.html">Back</a>
-
-                  
-                  <a class="button-red" href="cart_review.html">Review Order</a>
+          <div class="grid-col-1of2">
+  
+            <div class="checkout-column">
+              <div class="grid-col-12of12"><h2>2. Billing Info</h2></div> 
+              <div class="dropdown clear">
+               <form method="post" action="#">
+               <label for="dropdown-credit">Credit Card</label>
+               <button class="dropdown-select" id="dropdown-credit" style="width: 100%"> Select Card Type &nbsp; ▾</button>
+               <div class="dropdown-content" style="width: 100%;">
+                   <a href="#">Mastercard</a>
+                   <a href="#">Visa</a>
+               </div>
+               </form>
               </div>
-           
+            <div class="grid-col-8of12">
+              <form method="post" action="#">
+              <label for="form-credit#">Credit Card Number</label>
+              <input class="newsletter" type="text" placeholder="Card #" style="width: 100%">
+              </form>
+            </div>
+            <div class="grid-col-4of12">
+              <form method="post" action="#">
+              <label for="form-expiration">Expiration Date</label>
+              <input class="newsletter" type="text" placeholder="MM/YY" style="width: 100%">
+              </form>
+            </div>
+            <div class="grid-col-4of12">
+              <form method="post" action="#">
+              <label for="form-cvv">CVV</label>
+              <input class="newsletter" type="text" placeholder="CVV" style="width: 100%">
+              </form>
+            </div>
 
-                 </div>
-   
-              
-              
-        </div>
+          </div>
+           <div class="cart-container">
+             <a class="button-dark float-left" href="cart.html">Back</a>
+             <a class="button-red" href="cart_review.html">Review Order</a>
+           </div>
+         </div>    
+      </div>
+    </div>
     </section>
 
-        <footer id="footer">
-            
-           <div class="grid-row footer-container">
+   <footer id="footer">
+     <div class="grid-row footer-container">
+       
+       <div class="grid-col-3of12">
+          <h4 class="style3">Cocoon Co.</h4>
+          <ul class="footer">
+            <li>About Us</li>
+            <li>Events</li>
+            <li>Contact Us</li>
+          </ul>
+      </div>
+     <div class="grid-col-3of12">
+        <h4 class="style3">Help</h4>
+        <ul class="footer">
+          <li>Shipping + Delivery</li>
+          <li>Returns</li>
+          <li>FAQ</li>
+        </ul>
+      </div>
+     <div class="grid-col-3of12">
+        <h4 class="style3">Stay Connected</h4>
+        <input class="newsletter" type="text" placeholder="Email address :)" style="width: 100%">
+        <a class="button-dark" href="#">Subscribe</a>
+      </div>
 
-              <div class="grid-col-3of12">
-                
-                <h4 class="style3">Cocoon Co.</h4>
-                <ul class="footer">
-                  <a href="about.html">
-                    <li>About Us</li>
-                  </a>  
-                    <li>Updates</li>
-                    <li>Contact Us</li>  
-                </ul>
-         
-              </div>
-            
-
-              <div class="grid-col-3of12">
-                <h4 class="style3">Help</h4>
-                <ul class="footer">
-                  <li>Shipping + Delivery</li>
-                  <li>Returns</li>
-                  <li>FAQ</li>
-                </ul>
-    
-              </div>
-
-
-              <div class="grid-col-3of12">
-                <h4 class="style3">Stay Connected</h4>
-                <input class="newsletter" type="text" placeholder="Email address :)" style="width: 100%">
-                <a class="button-dark" href="#">Subscribe</a>
-
-              </div>
-
-              <div class="grid-col-8of12">
-                 <h5><a href="styleguide.html">Style Guide</a> | 
-                    <a href="https://github.com/robynsfg/p2-repo">GitHub Repository</a> | 
-                    <a href="citations.html">Citations</a> 
-                    © Hana Mareck and Robyn Goodridge</h5>
-              </div>
-
-
-         </div>
-
-        </footer>
-
-
-
-  <script>
-  function responsiveMenu() {
+    </div>
+  </footer>
+      
+   <script>
+   function responsiveMenu() {
       var x = document.getElementById("myTopnav");
       if (x.className === "topnav") {
           x.className += " responsive";

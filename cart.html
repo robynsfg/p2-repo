@@ -32,7 +32,6 @@
     <h2 class="style2">Cart</h2>
       
       <div class="checkout-column">
-
         <div class="grid-row">
           <div class="grid-col-10of12 checkout">&nbsp;</div>
           <div class="grid-col-1of12 checkout"><h3>PRICE</h3></div>              
@@ -44,71 +43,48 @@
           <div class="grid-col-10of12 checkout">
             <a href="product_detail.html" class="cart-image"><img src="img/hammockpng.png" alt="a parachute hammock"><h2>PARACHUTE HAMMOCK</h2></a>
           </div>
+          <div class="grid-col-1of12 checkout"><h2>$59</h2></div>
+          <div class="grid-col-1of12 checkout"><input class="quantity" type="text" placeholder="1"></div>
+          <div class="checkout-divider">&nbsp;</div>
+        </div>          
+        <div class="cart-total-container">
+          <h3>Cart Total: $59</h3>
+          <a class="button-red" href="cart_checkout.html">Check Out</a>
+        </div>
+        
+       </div>
+      </section>
 
-                            
-              
-                <div class="cart-total-container"><h3>Cart Total: $59</h3>
-                
-              <a class="button-red" href="cart_checkout.html">Check Out</a></div>
-            </div>
-          </div>
+   <footer id="footer">
+     <div class="grid-row footer-container">
+       
+       <div class="grid-col-3of12">
+          <h4 class="style3">Cocoon Co.</h4>
+          <ul class="footer">
+            <li>About Us</li>
+            <li>Events</li>
+            <li>Contact Us</li>
+          </ul>
+      </div>
+     <div class="grid-col-3of12">
+        <h4 class="style3">Help</h4>
+        <ul class="footer">
+          <li>Shipping + Delivery</li>
+          <li>Returns</li>
+          <li>FAQ</li>
+        </ul>
+      </div>
+     <div class="grid-col-3of12">
+        <h4 class="style3">Stay Connected</h4>
+        <input class="newsletter" type="text" placeholder="Email address :)" style="width: 100%">
+        <a class="button-dark" href="#">Subscribe</a>
+      </div>
 
-        </section>
-
-
-        <footer id="footer">
-            
-           <div class="grid-row footer-container">
-
-              <div class="grid-col-3of12">
-                
-                <h4 class="style3">Cocoon Co.</h4>
-                <ul class="footer">
-                  <a href="about.html">
-                    <li>About Us</li>
-                  </a>  
-                    <li>Updates</li>
-                    <li>Contact Us</li>  
-                </ul>
-         
-              </div>
-            
-
-              <div class="grid-col-3of12">
-                <h4 class="style3">Help</h4>
-                <ul class="footer">
-                  <li>Shipping + Delivery</li>
-                  <li>Returns</li>
-                  <li>FAQ</li>
-                </ul>
-    
-              </div>
-
-
-              <div class="grid-col-3of12">
-                <h4 class="style3">Stay Connected</h4>
-                <input class="newsletter" type="text" placeholder="Email address :)" style="width: 100%">
-                <a class="button-dark" href="#">Subscribe</a>
-
-              </div>
-
-              <div class="grid-col-8of12">
-                 <h5><a href="styleguide.html">Style Guide</a> | 
-                    <a href="https://github.com/robynsfg/p2-repo">GitHub Repository</a> | 
-                    <a href="citations.html">Citations</a> 
-                    © Hana Mareck and Robyn Goodridge</h5>
-              </div>
-
-
-         </div>
-
-        </footer>
-
-
-               
-
-  <script>
-  function responsiveMenu() {
+    </div>
+  </footer>
+      
+   <script>
+   function responsiveMenu() {
       var x = document.getElementById("myTopnav");
       if (x.className === "topnav") {
           x.className += " responsive";
