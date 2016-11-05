@@ -5,12 +5,11 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Detail Airborn</title>
-
+    <title>Product Detail Airborne</title>
     <link href="css/main.css" rel="stylesheet"> 
     <link href="css/normalize.css" rel="stylesheet"> 
     <link href="css/grids.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Karla:400,700|Roboto:100,300" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Roboto:100,300" rel="stylesheet">
 
     <body>
 
@@ -30,55 +29,99 @@
       </nav>
     
     <section id="product-detail">
-
-          
-          <div class="grid-col-1of2" style="float:left">
-            <img src="img/sky_hammock.jpg" class="image-product-detail" alt="Man on red hammock between trees while the sun shines">
-          </div>
-           
-          <div class="grid-col-1of2 BLAH">
-                <div class="header-background-box">
-                  <div class="header-subhead">
-                      <h3>Go to new heights.</h3>
-                  </div>
-                  <h2 class="style2">Airborn Hammock</h2>
-              </div>
-          </div>
-
-          <div class="grid-col-1of2" style="float:right">
-
-            <div class="product-description">
-                <p class="style2">When going up high in the sky you'll need to have a reliable hammock that will let you enjoy the view with your mind at ease. The Airborn hammock's thick nylon and reinforced strapping does just that, with carabiner clips to safely keep you on your rope. Additionally, the tightly wound cocoon shape keeps you planted without constricting movement. This hammock is perfect for those moments you wished you could turn into a beautiful butterfly!</p>
-            </div>
-            
-            <div class="product-extra-info">
-<!--                 <h4>Colour</h4>
-                <a class="redcolor" href="#"></a>
-                <a class="bluecolor" href="#"></a> -->
-                <h2>$79</h2> 
-            </div>
-
-            <div class="product-cart-button">
-                <input class="quantity" type="text" placeholder="1">
-                <a class="button-dark" href="cart.html">Add to Cart</a>
-            </div>
-            
-            
-          </div>
-
         
+      <div class="grid-col-1of2">
+        <img src="img/sky_hammock.jpg" class="image-product-detail" alt="Man on red hammock between trees while the sun shines">
+      </div>
+       
+      <div class="grid-col-1of2">
+        <div class="header-background-box">
+          <div class="header-subhead">
+              <h3>Go to new heights.</h3>
+          </div>
+          <h2 class="style2">Airborne Hammock</h2>
+        </div>
+      </div>
 
+      <div class="grid-col-1of2">
+
+        <div class="product-description">
+            <p class="style2">When going high in the sky you'll need to have a reliable hammock that lets you enjoy the view, mind at ease. The Airborne hammock's thick nylon and reinforced strapping does just that, with carabiner clips to safely keep you on your rope. Additionally, the tightly wound cocoon shape keeps you planted without constricting movement.</p>
+
+            <h4>Details</h4>
+
+            <ul class="product-detail">
+              <li>A7075 T-6 Aluminum Wiregate Carabiners</li>
+              <li>300lb Capacity</li>
+              <li>Cocoon Co's Lightest Hammock</li>
+              <li>Breathable, Quick-Drying Nylon</li>
+              <li>Attached Compression Stuff Sack</li>
+            </ul>
+
+        </div>
+        
+        <div class="product-extra-info">
+            <h2>$79</h2> 
+        </div>
+
+        <div class="product-cart-button">
+            <input class="quantity" type="text" placeholder="1">
+            <a class="button-dark" href="cart.html">Add to Cart</a>
+        </div>
+        
+        
+      </div>
+
+    </section>
+
+    <section id="related-content">
+
+        <div class="header-background-box">
+          <div class="header-subhead">
+              <h3>Check out the airborne hammock in action.</h3>
+          </div>
+          <h2 class="style2">More Info</h2>
+        </div>
+
+        <div class="product-extras-container">
+
+            <div class="grid-col-1of2">
+              <div class="product-extras-image">
+                <a href="explore_photo.html">
+                <h2>Josh and the Airborne in Vietnam</h2>
+                   <img src="img/explore-3_cropped.jpg" alt="A traveller standing within some mountains">
+                </a>
+              </div>
+            </div>
+
+            <div class="grid-col-1of2"> 
+              <div class="product-extras-video">
+                   <h2>Highline Hammocking in the Alps</h2>
          
+                   <div class="video-container">
+                        <div class="embed-container">
+                           <iframe src="https://www.youtube.com/embed/H9hb2bE0OKk"
+                           frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                        </div>   
+                   </div>
+
+              </div>
+            </div>
+
+        </div>
+
+
 
     </section>
 
     <section id="reviews">
+
       <div class="review-section">
 
+        <div class="grid-row">
 
-        <div class="grid-col-7of12">
-
-            <h2>Reviews</h2>
+          <div class="grid-col-1of2 review">
+              <h2>Reviews</h2>
 
             <div class="grid-col-4of12">
                <form method="post" action="#">
@@ -90,7 +133,6 @@
             <div class="grid-col-4of12">
                    <form method="post" action="#">
                    <label for="form-lastname">Last Name</label>
-
                    <input class="newsletter" type="text" placeholder="Last Name" style="width: 100%">
                     </form>
             </div>
@@ -108,68 +150,78 @@
                    <input class="newsletter" type="text" placeholder="Please reference your Cocoon&Co Receipt" style="width: 100%">
                     </form>
             </div>
-            <form method="post" action="#">
-                <label for="form-content"></label> 
-                <textarea id="form-content" placeholder="Leave a review!" rows="7" cols="70" style="width: 100%"></textarea>
-            </form>
-            <a class="button-dark" href="#">Submit</a>
-         </div>
 
-         <div class="grid-col-5of12">
-           <div class="review-section">
-            <h2>Other User's Reviews</h2>
+              <form method="post" action="#">
+                  <label for="form-content"></label> 
+                  <textarea id="form-content" placeholder="Leave a review!" rows="5" cols="70"></textarea>
+              </form>
+              <a class="button-dark" href="#">Submit</a>
+          </div>
 
-              <h4>Steve Buscarmi</h4><h5>May 19, 2016</h5>
+
+          <div class="grid-col-1of2 review">
+
+             <h2>Other Users' Reviews</h2>
+
+             <h4>Steve Buscarmi</h4><h5>May 19,2016</h5>
              <p>I was up in the air for a 3-hour nap and slept like a baby. When I'm trusting this thing with my life, I want to make sure it's not going to do anything unexpected - also had some rad secret pockets for hiding my snacks from my girlfriend.</p>
 
              <h4>Marsela Leema</h4><h5>August 2, 2015</h5>
              <p>Bring this thing pretty much everytime I go slacklining. Note to self - do not pack it when it still has rain residue unless you want a smelly surprise.</p>
-            
-            <a class="button-dark" href="#">See More Reviews</a>
+              
+             <a class="button-dark" href="#">See More Reviews</a>
 
+          </div>
 
-           </div>
-         </div>
-       </div>
+        </div>
+
+      </div>
+
     </section>
 
-         <footer id="footer">
-            
-           <div class="grid-row footer-container">
+      <footer id="footer">
+          
+        <div class="grid-row footer-container">
 
-            <div class="grid-col-3of12">
-              
-              <h4 class="style3">Cocoon Co.</h4>
-              <ul class="footer">
+          <div class="grid-col-3of12">
+            <h4 class="style3">Cocoon Co.</h4>
+            <ul class="footer">
+              <a href="about.html">
                 <li>About Us</li>
-                <li>Events</li>
-                <li>Contact Us</li>
-              </ul>
-       
-            </div>
+              </a>  
+                <li>Updates</li>
+                <li>Contact Us</li>  
+            </ul>
+          </div>
           
 
-           <div class="grid-col-3of12">
-              <h4 class="style3">Help</h4>
-              <ul class="footer">
-                <li>Shipping + Delivery</li>
-                <li>Returns</li>
-                <li>FAQ</li>
-              </ul>
-  
+          <div class="grid-col-3of12">
+            <h4 class="style3">Help</h4>
+            <ul class="footer">
+              <li>Shipping + Delivery</li>
+              <li>Returns</li>
+              <li>FAQ</li>
+            </ul>
+          </div>
+
+
+          <div class="grid-col-3of12">
+            <h4 class="style3">Stay Connected</h4>
+            <input class="newsletter" type="text" placeholder="Email address :)" style="width: 100%">
+            <a class="button-dark" href="#">Subscribe</a>
+          </div>
+
+            <div class="grid-col-8of12">
+               <h5><a href="styleguide.html">Style Guide</a> | 
+                  <a href="https://github.com/robynsfg/p2-repo">GitHub Repository</a> | 
+                  <a href="citations.html">Citations</a> 
+                  © Hana Mareck and Robyn Goodridge</h5>
             </div>
 
+        </div>
 
-           <div class="grid-col-3of12">
-              <h4 class="style3">Stay Connected</h4>
-              <input class="newsletter" type="text" placeholder="Email address :)" style="width: 100%">
-              <a class="button-dark" href="#">Subscribe</a>
+      </footer>
 
-
-          </div>
-          </div>
-
-        </footer>
 
   <script>
   function responsiveMenu() {

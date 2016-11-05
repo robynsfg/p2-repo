@@ -115,6 +115,7 @@ section:not([id]) {
 .review-section{
   margin-left: auto;
   margin-right: auto;
+  margin-top: 4rem;
   width: 85%;
   line-height: 1.7em;
 }
@@ -210,6 +211,14 @@ section:not([id]) {
 }
 
 .product-extra-info:hover h4{
+  color: #FB5A5A;
+}
+
+.product-extras-image:hover h2{
+  color: #FB5A5A;
+}
+
+.product-extras-video:hover h2{
   color: #FB5A5A;
 }
 
@@ -653,6 +662,23 @@ section h5 {
   color: #333;
   margin: 0;
   padding:0;
+  text-align: left;
+}
+
+h5 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  line-height: 1rem;
+  padding-bottom: .4rem;
+
+}
+
+footer a:hover {
+  color: #FB5A5A;
+  -webkit-transition: color 0.4s ease-out;
+  transition: color 0.4s ease-out;
 }
 
 section p {
