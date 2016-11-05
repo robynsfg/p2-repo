@@ -49,12 +49,12 @@ section h2.style2 {
   line-height: 3rem;
   padding-left: 2rem;
 }
-
+/*
 .product-description h2{
   font-size: 2rem;
   padding-top: 0;
   margin-top: 0;
-}
+}*/
 
 .review-section h2, .checkout-column h2, .product-extras-container h2{
   font-family:'Karla', sans-serif; 
@@ -97,7 +97,7 @@ section h3{
     }
 }
 
-section h3.white, section h3.style2 {
+section h3.white{
   font-family: 'Roboto', sans-serif;
   font-size: 1.2rem;
   font-weight: 300;
@@ -110,10 +110,10 @@ section h3.white {
   color: white;
 }
 
-section h3.style2 {
+/*section h3.style2 {
   text-align: center;
   color: #000;
-}
+}*/
 
 .updates h3{
   font-size: 1.2rem;
@@ -209,10 +209,10 @@ section h4.style3{
     color: #FB5A5A;
 }
 
-section h4.product-extras {
+/*section h4.product-extras {
   font-size: 1.3rem;
   margin-left:1rem;
-}
+}*/
 
 section h5 {
   font-family: 'Roboto-medium', sans-serif;
