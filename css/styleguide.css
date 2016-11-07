@@ -18,19 +18,25 @@ section.grids {
 	border-bottom: 0rem;
 }
 
-h1{
+h1.coral{
 	font-family: 'Karla', sans-serif;
 	font-weight: 700;
 	font-size: 2.2rem;
 	color: #FB5A5A;
 }
 
+h1 {
+  font-family: 'Karla', sans-serif;
+  color: #333;
+  font-size: 3rem;
+  text-decoration: 0;
+}
+
 section h2{
   font-family: 'Karla', sans-serif;
   font-weight: 700;
   font-size: 2rem;
-  line-height: 3rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 section h3{
@@ -39,7 +45,7 @@ section h3{
   font-size: 1.2rem;
   color: #333;
   padding: 1.2rem 0 .2rem 0;
-    letter-spacing: .06rem;
+  letter-spacing: .06rem;
 
 }
 
