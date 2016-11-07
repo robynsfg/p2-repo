@@ -47,6 +47,7 @@
       </section>
 
     </section>
+
     <!-- INTERACTIVE ELEMENTS SECTION // -->
     <section id="interactive_elements">
 
@@ -55,11 +56,11 @@
         <h2>Navigation Button</h2>
 
         <h3>CSS selector:</h3>
-        <p>.nav-main-item, box-item</p>
+        <p>.box-item-nav, button-nav</p>
 
         <h3>Sample code:</h3>
-        <code>&lt;nav class="nav-main box"&gt;<br>
-        &lt;a href="#" class="nav-main-item box-item"&gt;Shop&lt;/a&gt;<br>
+        <code>&lt;nav&gt;<br>
+        &lt;a href="#" class="box-item-nav button-nav"&gt;Shop&lt;/a&gt;<br>
         &lt;/nav&gt;</code>
 
         <h3>Rendered element:</h3>
@@ -89,14 +90,14 @@
         <h2>Primary/Secondary Buttons</h2>
 
         <h3>CSS selector:</h3>
-        <p>.button</p>
+        <p>.button-red .button-dark</p>
 
         <h3>Sample code:</h3>
-        <code>&lt;a class="button" href="#"&gt;Submit&lt;/a&gt;<br>
-        &lt;a class="button" href="#"&gt;Reset&lt;/a&gt;</code>
+        <code>&lt;a class="button-red" href="#"&gt;Shop&lt;/a&gt;<br>
+        &lt;a class="button-dark" href="#"&gt;Back&lt;/a&gt;</code>
 
         <h3>Rendered element:</h3>
-        <a class="button-red float-left" href="#">Shop</a>
+        <a class="button-red" href="#">Shop</a>
         <a class="button-dark" href="#">Back</a>
 
       </section>
@@ -108,7 +109,7 @@
         <p>input</p>
 
         <h3>Sample code:</h3>
-        <code>&lt;input type="text" id="form-text" placeholder="Ham Mock"&gt;</code>
+        <code>&lt;input class="newsletter" type="text" id="form-text" placeholder="Ham Mock"&gt;</code>
 
         <h3>Rendered element:</h3>
         <label for="form-text">Name: </label>
@@ -120,10 +121,16 @@
         <h2>Dropdown Menu</h2>
 
         <h3>CSS selector:</h3>
-        <p>input</p>
+        <p>.dropdown, label, button, .dropdown-select, .dropdown-content</p>
 
         <h3>Sample code:</h3>
-        <code>&lt;input type="text" id="form-text" placeholder="Ham Mock"&gt;</code>
+        <code>&lt;div class="dropdown"&gt;<br>
+          &lt;button class="dropdown-select&gt;Dropdown&nbsp;&lt;/button&gt;<br>
+          &lt;div class="dropdown-content"&gt;
+            &lt;a href="#"&gt;Dropdown content&lt;/a&gt;<br>
+          &lt;/div&gt;<br>
+          &lt;/div&gt;<br>
+        </code>
 
         <h3>Rendered element:</h3>
         <div class="dropdown">
@@ -136,6 +143,7 @@
                   <a href="#">A</a>
                   <a href="#">Dropdown</a>
                 </div>
+        </div>
 
       
       </section>  
@@ -150,6 +158,9 @@
 
       <section>
         <h2>Headings</h2>
+
+        <h3>CSS selector:</h3>
+        <p>h1, h2, h3, h4</p>
 
         <h3>Sample code:</h3>
         <code>&lt;h1&gt;Header 1&lt;/h1&gt;<br>
@@ -168,6 +179,9 @@
       <section>
         <h2>Paragraphs</h2>
 
+        <h3>CSS selector:</h3>
+        <p>p</p>
+
         <h3>Sample code:</h3>
         <code>&lt;p&gt;Cocoon Co. is a hammock e-commerce and inspiration site for outdoor adventurers and enthusiast loungers. Innovative materials and dozens of styles encourage explorers to combine the thrill of adventure with an appetite to relax.&lt;/p&gt;</code>
           
@@ -178,6 +192,9 @@
 
       <section>
         <h2>Bulleted Lists</h2>
+
+        <h3>CSS selector:</h3>
+        <p>ul, li</p>
 
         <h3>Sample code:</h3>
 
@@ -211,6 +228,20 @@
       <section>
         <h2>Main Navigation</h2>
 
+        <h3>CSS selector:</h3>
+        <p>.nav-main .box .nav-main-item .box-item</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;nav class="nav-main box&gt;<br>
+          &lt;a href="shop" class="nav-main-item box-item&gt;Shop&lt;/a&gt;<br>
+          &lt;a href="adventures" class="nav-main-item box-item&gt;Adventures&lt;/a&gt;<br>
+          &lt;a href="about" class="nav-main-item box-item&gt;About&lt;/a&gt;<br>
+          &lt;a href="cart" class="nav-main-item box-item&gt;Cart&lt;/a&gt;<br>
+          &lt;/nav&gt;
+        </code>
+
+        <h3>Rendered element:</h3>
+
         <nav class="nav-main box">
             <a href="#shop" class="nav-main-item box-item">Shop</a>
             <a href="#adventures" class="nav-main-item box-item">Adventures</a>
@@ -223,9 +254,32 @@
       <section>
         <h2>Product Listing</h2>
 
+        <h3>CSS selector:</h3>
+        <p>.grid-row .product-detail-container .grid-col-4of12 <br>
+        .product-listing .product-listing-background .product figure</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;nav class="grid-row"&gt;<br>
+          &lt;div class="product-detail-container"&gt;<br>
+          &lt;div class="grid-col-4of12 product-listing"&gt;<br>
+          &lt;a href="product_detail.html"&gt;<br>
+          &lt;figure&gt;<br>
+          &lt;img alt="#" src="img/img.png"&gt;<br>
+          &lt;div class="product-listing-background"&gt;<br>
+          &lt;div class="product"&gt;&lt;h3&gt;Parachute Hammock&lt;/h3&gt;&lt;/div&gt;<br>
+          &lt;p&gt;A lightweight, durable expedition hammock that’s ready for any type of wilderness.&lt;/p&gt;<br>
+          &lt;h3 class="figure"&gt;$59&lt;/h3&gt;<br>
+          &lt;/div&gt;<br>
+          &lt;/figure&gt;<br>
+          &lt;/a&gt;<br>
+          &lt;/div&gt;
+
+        </code>
+
+        <h3>Rendered element:</h3>
+
 		    <nav class="grid-row">
     
-            
           <div class="product-detail-container">
 
             <div class="grid-col-4of12 product-listing">
