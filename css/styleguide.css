@@ -1,0 +1,15 @@
+/* STYLE GUIDE STYLING */
+
+
+body { 
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8rem;
+  background-color: #f7f7f7;
+  overflow-x: hidden;
+  padding: 3rem;
+}
+
+section:not([id]) {
+  padding: 0.5em 0;
+  border-bottom: .1rem dotted #333
+}
