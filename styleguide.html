@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Style Guide</title>
 
-    <link href="css/main.css" rel="stylesheet"> 
+    <link href="css/main.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet"> 
     <link href="css/grids.css" rel="stylesheet">
     <link href="css/styleguide.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Roboto:100,300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Roboto:100,300,400" rel="stylesheet">
 
   </head>
 
@@ -20,28 +20,39 @@
     <h1>Cocoon Co. Style Guide</h1>
 
      <nav>
-        <a href="userflows.html" class="button-nav">User Flows</a>
-        <a href="styleguide.html" class="button-nav">Style Guide</a>
-        <a href="citations.html" class="button-nav">Citations</a>
+        <a href="userflows.html" class="button-nav">Back to Cocoon Co.</a>
      </nav>
+
+    <section id="colour">
       
-      <p>
+      <section>
+        
+        <h2>Colour Palette</h2>
 
-        Jump to:
-        <ul>
-          <li><a href="#interactive_elements">Interactive Elements</a></li>
-          <li><a href="#text_elements">Text Elements</a></li>
-          <li><a href="#combined_elements">Combined Elements</a></li>
-        </ul>
+        <div class="dark-grey">
+          <h3 class="white">Dark Grey #333</h3>
+          <p class="white">Text Elements</p>
+        </div>
 
-      </p>
+        <div class="bright-coral">
+          <h3 class="white">Bright Coral #f5a5a5</h3>
+          <p class="white">Accents</p>
+        </div>
 
+        <div class="light-grey">
+          <h3>Light Grey #f7f7f7</h3>
+          <p>Website Background</p>
+        </div>
+
+      </section>
+
+    </section>
     <!-- INTERACTIVE ELEMENTS SECTION // -->
     <section id="interactive_elements">
 
       <section>
 
-        <h2 class="style2">Navigation Button</h2>
+        <h2>Navigation Button</h2>
 
         <h3>CSS selector:</h3>
         <p>.nav-main-item, box-item</p>
@@ -52,8 +63,10 @@
         &lt;/nav&gt;</code>
 
         <h3>Rendered element:</h3>
-        <nav class="nav-main box">
-            <a href="#shop" class="nav-main-item box-item">Shop</a>
+        <nav>
+            <div id="myTopnav" class="topnav">
+              <a class="box-item-nav button-nav" href="product_listing.html">Shop</a>
+            </div>
         </nav>
 
       </section>
@@ -73,7 +86,7 @@
       </section>
 
       <section>
-        <h2>Submit/Reset Buttons</h2>
+        <h2>Primary/Secondary Buttons</h2>
 
         <h3>CSS selector:</h3>
         <p>.button</p>
@@ -83,8 +96,8 @@
         &lt;a class="button" href="#"&gt;Reset&lt;/a&gt;</code>
 
         <h3>Rendered element:</h3>
-        <a class="button" href="#">Submit</a>
-        <a class="button" href="#">Reset</a>
+        <a class="button-red float-left" href="#">Shop</a>
+        <a class="button-dark" href="#">Back</a>
 
       </section>
 
@@ -99,7 +112,7 @@
 
         <h3>Rendered element:</h3>
         <label for="form-text">Name: </label>
-           <input type="text" id="form-text" placeholder="Ham Mock">
+           <input class="newsletter" type="text" id="form-text" placeholder="Ham Mock">
 
       </section>
 
