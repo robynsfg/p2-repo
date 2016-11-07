@@ -116,6 +116,30 @@
 
       </section>
 
+      <section>
+        <h2>Dropdown Menu</h2>
+
+        <h3>CSS selector:</h3>
+        <p>input</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;input type="text" id="form-text" placeholder="Ham Mock"&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <div class="dropdown">
+        <form method="post" action="#">
+                <label for="dropdown-country">Dropdown</label>
+                <button class="dropdown-select" id="dropdown-country"> Dropdown &nbsp; ▾</button>
+                <div class="dropdown-content">
+                  <a href="#">This</a>
+                  <a href="#">Is</a>
+                  <a href="#">A</a>
+                  <a href="#">Dropdown</a>
+                </div>
+
+      
+      </section>  
+
     </section>
     <!-- // INTERACTIVE ELEMENTS SECTION -->
 
@@ -173,28 +197,7 @@
 
       </section>
 
-      <section>
-        <h2>Numbered Lists</h2>
-
-        <h3>Sample code:</h3>
-
-        <code>&lt;ol&gt;<br>
-          &lt;li&gt;Mayan Hammocks&lt;/li&gt;<br>
-          &lt;li&gt;Rope Hammocks&lt;/li&gt; <br>
-          &lt;li&gt;Camping Hammocks&lt;/li&gt; <br>
-          &lt;li&gt;Nicaraguan Hammocks&lt;/li&gt;<br>&lt;/ol&gt;
-        </code>
-
-        <h3>Rendered element:</h3>
-        <ol>
-          <li>Mayan Hammocks</li>
-          <li>Rope Hammocks</li>
-          <li>Camping Hammocks</li>
-          <li>Nicaraguan Hammocks</li>
-        </ol>
-
-      </section>
-
+      
     </section>
     <!-- // TEXT ELEMENTS SECTION -->
 
@@ -208,9 +211,9 @@
 
         <nav class="nav-main box">
             <a href="#shop" class="nav-main-item box-item">Shop</a>
-            <a href="#customize" class="nav-main-item box-item">Customize</a>
-            <a href="#explore" class="nav-main-item box-item">Explore</a>
+            <a href="#adventures" class="nav-main-item box-item">Adventures</a>
             <a href="#about" class="nav-main-item box-item">About</a>
+            <a href="#cart" class="nav-main-item box-item">Cart</a>
         </nav>
 
       </section>
@@ -218,73 +221,77 @@
       <section>
         <h2>Product Listing</h2>
 
-          
-          
-		<nav class="grid-row">
+		    <nav class="grid-row">
+    
+            
+          <div class="product-detail-container">
 
-            
-            
-            <div class="grid-col-1of3 product-listing">
-                
+            <div class="grid-col-4of12 product-listing">
+              <a href="product_detail.html">
                 <figure>
-                    <img alt="Colourfully-striped Brazilian hammock" src="img/hammock2.png">
-                    <div class="product-listing-background">
-                        <figcaption>Striped Brazilian Hammock</figcaption>
-                        <p>Here's content, some more, hammocks are great. Just a little more writing to take up space.</p>
-                        <h3 class="figure">59$</h3>
-                    </div>
+                  <img alt="Colourfully-striped Brazilian hammock" src="img/parachute_hammock_cropped.jpg">
+                  <div class="product-listing-background">
+                      <div class="product"><h3>Parachute Hammock</h3></div>
+                      <p>A lightweight, durable expedition hammock that’s ready for any type of wilderness.</p>
+                      <h3 class="figure">$59</h3>
+                  </div>
                 </figure>
-      
+              </a>
             </div>
-            
-             <div class="grid-col-1of3 product-listing">
                 
+            <div class="grid-col-4of12 product-listing">
+              <a href="product_detail2.html">
                 <figure>
-                    <img alt="Colourfully-striped Brazilian hammock" src="img/hammock2.png">
+                    <img alt="Colourfully-striped Brazilian hammock" src="img/sky_hammock_cropped.jpg">
                     <div class="product-listing-background">
-                        <figcaption>Striped Brazilian Hammock</figcaption>
-                        <p>Here's content, some more, hammocks are great. Just a little more writing to take up space.</p>
-                        <h3 class="figure">59$</h3>
+                      <div class="product"><h3>Airborne Hammock</h3></div>
+                      <p>Fly high with this hammock, keeping you strapped in while you challenge the heights.</p>
+                      <h3 class="figure">$79</h3>
                     </div>
                 </figure>
-      
-            </div>            
-            
-            <div class="grid-col-1of3 product-listing">
-               
-                <figure>
-                    <img alt="Colourfully-striped Brazilian hammock" src="img/hammock2.png">
-                    <div class="product-listing-background">
-                        <figcaption>Striped Brazilian Hammock</figcaption>
-                        <p>Here's content, some more, hammocks are great. Just a little more writing to take up space.</p>
-                        <h3 class="figure">59$</h3>
-                    </div>
-                </figure>
-      
-            </div>
-
+              </a>
+            </div>     
             
         </nav>
 
       </section>
 
-      <section>
+      <section class="grids">
         <h2>Grids</h2>
 
-        <div>
-          <h3>4K Grid</h3>
-          <img src="img/4kgrid.jpg" alt="4k wireframes with grid">
+
+        <div class="grid-col-1of2">
+            <img src="img/brad1.jpg" class="image-product-detail" alt="A picture of a young man standing among mountain-scape">
         </div>
 
-        <div>
-          <h3>Mobile Grid</h3>
-          <img src="img/mobilegrid.jpg" alt="Mobile wireframes with grid">
+        <div class="grid-col-1of2">
+            <div class="header-background-box">
+              <div class="header-subhead">
+                <h3 class="white">Adventurer: Brad Romano</h3>
+              </div>
+                <h2 class="style2">Washington Trek</h2>
+            </div>
+              
+          <div class="product-description">
+            <p class="style2">From Mt. Rainier to Mt. Olympus, Brad Romano embarked on a trek
+            that would bring him through sleet and snow, but finished with one month's worth of incredible stories to share. What began as a solo trip to take a break from his position as a high school
+            biology teacher turned into a friendly expedition as he met fellow hikers along his way.
+            With his hammock in tow, Brad found his rhythm within the mountains, always making sure
+            there were opportunities for a hang between the trees.</p>
+          </div>
+            
+          <div class="product-extra-info">
+              <h3>Featured Product</h3>
+              <a href="product_detail.html"><img src="img/parachute_hammock_cropped.jpg" alt="Parachute Hammock">
+                <h4>Parachute Hammock</h4>
+                <h5>$59</h5>
+              </a>
+          </div>
+
         </div>
 
-        <div>
-          <h3>Smartwatch Grid</h3>
-          <img src="img/smartwatchgrid.jpg" alt="Smartwatch wireframes with grid">
-        </div>
+
+   
 
       </section>
 
