@@ -1131,6 +1131,8 @@ figcaption.product-extras {
   background-color: #f9f9f9;
   text-decoration: none;
   width: 100%;
+  z-index: 1000;
+
 }
 
 .dropdown-content a {
